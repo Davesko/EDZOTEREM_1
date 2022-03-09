@@ -44,7 +44,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="#" class="logo">FITNESS<em> VITAL</em></a>
+                    <a href="index.php" class="logo">FITNESS<em> VITAL</em></a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
