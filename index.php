@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-    <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+   <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+
+    <link rel="stylesheet" href="assets/css/style.css.css">
 
     </head>
     
@@ -47,9 +49,10 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">KEZDŐLAP</a></li>
-                            <li class="scroll-to-section"><a href="#features">RÓLUNK</a></li>
+                            <li class="scroll-to-section"><a href="#prices">ÁRAK</a></li>
                             <li class="scroll-to-section"><a href="#our-classes">ÓRÁK</a></li>
                             <li class="scroll-to-section"><a href="#schedule">MENETREND</a></li>
+                            <li class="scroll-to-section"><a href="#trainers">EDZŐINK</a></li>
                             <li class="scroll-to-section"><a href="#contact-us">KONTAKT</a></li>
                             <li class="main-button"><a href="#">REGISZTRÁCIÓ</a></li>
                         </ul>        
@@ -85,89 +88,74 @@
     <!-- ***** Main Banner Area End ***** -->
 
 
-    <!-- ***** Features Item Start ***** -->
-    <section class="section" id="features">
+
+
+    <!-- ***** ÁRAK ***** -->
+
+
+
+    <section class="section" id="prices">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Válassz <em>programot</em></h2>
+                        <h2>Áraink<em></em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
-
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Max Training <br>(Muscle Activity Excellence)</h4>
-                                <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll.</p>
-                                <a href="#" class="text-button">Mutass Többet</a>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="second one">
-                            </div>
-                            <div class="right-content">
-                                <h4>New Gym Training</h4>
-                                <p>If you wish to support TemplateMo website via PayPal, please feel free to contact us. We appreciate it a lot.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="third gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4>Basic Muscle Course</h4>
-                                <p>Credit goes to <a rel="nofollow" href="https://www.pexels.com" target="_blank">Pexels website</a> for images and video background used in this HTML template.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="fourth muscle">
-                            </div>
-                            <div class="right-content">
-                                <h4>Advanced Muscle Course</h4>
-                                <p>You may want to browse through <a rel="nofollow" href="https://templatemo.com/tag/digital-marketing" target="_parent">Digital Marketing</a> or <a href="https://templatemo.com/tag/corporate">Corporate</a> HTML CSS templates on our website.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="training fifth">
-                            </div>
-                            <div class="right-content">
-                                <h4>Yoga Training</h4>
-                                <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4>Body Building Course</h4>
-                                <p>Suspendisse fringilla et nisi et mattis. Curabitur sed finibus nisi. Integer nibh sapien, vehicula et auctor.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***** Features Item End ***** -->
+
+  <div class="container">
+    <table class="table justify-content-center">
+
+    <thead class="align-middle">
+    <tr>
+        <th scope="col"> </th>
+        <th scope="col">FELNŐTT</th>
+        <th scope="col">DIÁK</th>
+        <th scope="col">ÉRVÉNYESSÉG</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1 alkalom</th>
+        <td>1.200 Forint</td>
+        <td>1.000 Forint</td>
+        <td>1 nap</td>
+    </tr>
+    <tr>
+        <th scope="row">10 alkalom</th>
+        <td>11.000 Forint</td>
+        <td>9.000 Forint</td>
+        <td>60 nap</td>
+    </tr>
+    <tr>
+        <th scope="row">20 alkalom</th>
+        <td>20.000 Forint</td>
+        <td>16.000 Forint</td>
+        <td>90 nap</td>
+    </tr>
+    <tr>
+        <th scope="row">1 év</th>
+        <td>190.000 Forint</td>
+        <td>150.000 Forint</td>
+        <td>1 év</td>
+    </tr>
+
+    </tbody>
+    </table>
+
+  </div>>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    <!-- ***** ÁRAK VÉGE ***** -->
 
     <!-- ***** Call to Action Start ***** -->
     <section class="section" id="call-to-action">
@@ -175,7 +163,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                        <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
+                        <h2>NE GONDOLKOZZ, <em>CSELEKEDJ</em> MÉG<em> MA</em>!</h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
                         <div class="main-button scroll-to-section">
                             <a href="#our-classes">Legyél te is tag</a>

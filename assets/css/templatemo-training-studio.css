@@ -23,16 +23,16 @@ Table of contents
 12. portfolio
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
+---------------------------------------------
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-/* 
+/*
 ---------------------------------------------
 reset
---------------------------------------------- 
+---------------------------------------------
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -108,10 +108,10 @@ p {
   color: #7a7a7a;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body {
@@ -195,10 +195,10 @@ body {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 
 .background-header {
@@ -593,10 +593,10 @@ header
 }
 
 
-/* 
+/*
 ---------------------------------------------
 banner
---------------------------------------------- 
+---------------------------------------------
 */
 
 .main-banner {
@@ -604,25 +604,25 @@ banner
 }
 
 #bg-video {
-    min-width: 100%;
-    min-height: 100vh;
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
 #bg-video::-webkit-media-controls {
-    display: none !important;
+  display: none !important;
 }
 
 .video-overlay {
-    position: absolute;
-    background-color: rgba(35,45,57,0.8);
-    top: 0;
-    left: 0;
-    bottom: 7px;
-    width: 100%;
+  position: absolute;
+  background-color: rgba(35,45,57,0.8);
+  top: 0;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
 }
 
 .main-banner .caption {
@@ -689,7 +689,7 @@ features
   margin-bottom:  7px;
   letter-spacing: 0.25px;
   color: #232d39;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -833,10 +833,10 @@ Our Classes
 }
 
 
-/* 
+/*
 ---------------------------------------------
 schedule
---------------------------------------------- 
+---------------------------------------------
 */
 
 #schedule {
@@ -854,7 +854,7 @@ schedule
 }
 
 #schedule table tbody {
-  border-top: 1px solid #fff; 
+  border-top: 1px solid #fff;
 }
 
 #schedule table tbody tr {
@@ -875,13 +875,13 @@ schedule
 }
 
 .schedule-table.filtering .ts-item {
-    opacity: 0;
-    transition: all 0.5s;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .schedule-table.filtering .ts-item.show {
-    opacity: 1;
-    transition: all 0.5s;
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 #schedule .filters {
@@ -937,10 +937,10 @@ schedule
 }
 
 
-/* 
+/*
 ---------------------------------------------
 trainers
---------------------------------------------- 
+---------------------------------------------
 */
 
 #trainers .trainer-item {
@@ -995,10 +995,10 @@ trainers
 }
 
 
-/* 
+/*
 ---------------------------------------------
 contact
---------------------------------------------- 
+---------------------------------------------
 */
 
 #contact-us {
@@ -1079,10 +1079,10 @@ contact
 
 
 
-/* 
+/*
 ---------------------------------------------
 footer
---------------------------------------------- 
+---------------------------------------------
 */
 footer {
   text-align: center;
@@ -1104,112 +1104,111 @@ footer p a:hover {
 }
 
 
-
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
+---------------------------------------------
 */
 
 .js-preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #232d39;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    opacity: 1;
-    visibility: visible;
-    z-index: 9999;
-    -webkit-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #232d39;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .js-preloader.loaded {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @-webkit-keyframes dot {
-    50% {
-        -webkit-transform: translateX(96px);
-        transform: translateX(96px);
-    }
+  50% {
+    -webkit-transform: translateX(96px);
+    transform: translateX(96px);
+  }
 }
 
 @keyframes dot {
-    50% {
-        -webkit-transform: translateX(96px);
-        transform: translateX(96px);
-    }
+  50% {
+    -webkit-transform: translateX(96px);
+    transform: translateX(96px);
+  }
 }
 
 @-webkit-keyframes dots {
-    50% {
-        -webkit-transform: translateX(-31px);
-        transform: translateX(-31px);
-    }
+  50% {
+    -webkit-transform: translateX(-31px);
+    transform: translateX(-31px);
+  }
 }
 
 @keyframes dots {
-    50% {
-        -webkit-transform: translateX(-31px);
-        transform: translateX(-31px);
-    }
+  50% {
+    -webkit-transform: translateX(-31px);
+    transform: translateX(-31px);
+  }
 }
 
 .preloader-inner {
-    position: relative;
-    width: 142px;
-    height: 40px;
-    background: #232d39;
+  position: relative;
+  width: 142px;
+  height: 40px;
+  background: #232d39;
 }
 
 .preloader-inner .dot {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 12px;
-    left: 15px;
-    background: #fff;
-    border-radius: 50%;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-animation: dot 2.8s infinite;
-    animation: dot 2.8s infinite;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: dot 2.8s infinite;
+  animation: dot 2.8s infinite;
 }
 
 .preloader-inner .dots {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    margin-top: 12px;
-    margin-left: 31px;
-    -webkit-animation: dots 2.8s infinite;
-    animation: dots 2.8s infinite;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  -webkit-animation: dots 2.8s infinite;
+  animation: dots 2.8s infinite;
 }
 
 .preloader-inner .dots span {
-    display: block;
-    float: left;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-    background: #fff;
-    border-radius: 50%;
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: #fff;
+  border-radius: 50%;
 }
 
 
-/* 
+/*
 ---------------------------------------------
 responsive
---------------------------------------------- 
+---------------------------------------------
 */
 
 
@@ -1248,3 +1247,9 @@ responsive
     margin-left: 130px;
   }
 }
+
+.table tr  {
+  text-align: center;
+}
+
+
