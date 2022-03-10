@@ -1256,6 +1256,20 @@ responsive
 
 
 
+#container {
+  height:100%;
+  border-collapse:collapse;
+  display : table;
+}
+
+.foot {
+  display : table-row;
+  vertical-align : bottom;
+  height : 1px;
+}
+
+
+
 
 
 

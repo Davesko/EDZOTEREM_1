@@ -61,17 +61,7 @@
 <!-- ***** Main Banner Area Start ***** -->
 
 
-
-
-
-
-
-
-
-
-
-<div class="section-heading dark-bg" >
-    <div class="container ">
+<div class="video-overlay" >
         <div class="form-body">
             <div class="row justify-content-center">
                 <div class="form-holder">
@@ -128,18 +118,36 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 
 
 </div>
 
-<section class="section">
 
-<div style="margin-top: 850px" >
-<?php include "footer.php"?>
-</div>
-</section>
+
+
+
+
+<footer>
+    <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div>
+            <div class="col-lg-12">
+                <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+<?php //include "footer.php"?>
+
+
+
+
 
 </body>
 
