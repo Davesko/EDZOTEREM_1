@@ -17,7 +17,7 @@
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <h2>Fitness <em>Vital</em></h2>
                 <div class="main-button scroll-to-section">
-                    <a href="#features">Légy te is tag</a>
+                    <a href="register.php">Légy te is tag</a>
                 </div>
             </div>
         </div>

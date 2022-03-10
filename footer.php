@@ -19,12 +19,13 @@
 <script src="assets/js/custom.js"></script>
 
 
+
 <!-- ***** Footer Start ***** -->
 <footer>
-    <div class="container">
-        <div class="row">
+    <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div>
             <div class="col-lg-12">
-                <p>Copyright &copy; 2022 FITNESS VITAL
+                <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>
 
 
 

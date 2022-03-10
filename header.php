@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
 
-    <link rel="stylesheet" href="assets/css/style.css.css">
+
 
 </head>
 
