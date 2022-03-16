@@ -6,7 +6,7 @@
 
 <body>
 
-    <!-- ***** Main Banner Area Start ***** -->
+    <!-- *****  BANNER KEZDETE  ***** -->
     <div class="main-banner" id="top">
         <video autoplay muted loop id="bg-video">
             <source src="assets/images/boxos.mp4" type="video/mp4" />
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** BANNER ***** -->
 
 
 
@@ -127,14 +127,14 @@
                     <div class="section-heading">
                         <h2>Our <em>Classes</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                        <p>Válassz egy órát a specifikusabb és profibb edzés érdekében.</p>
                     </div>
                 </div>
             </div>
             <div class="row" id="tabs">
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">First Training Class</a></li>
+                  <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">MAX training</a></li>
                   <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Second Training Class</a></a></li>
                   <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Third Training Class</a></a></li>
                   <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li>
@@ -145,10 +145,10 @@
                 <section class='tabs-content'>
                   <article id='tabs-1'>
                     <img src="assets/images/training-image-01.jpg" alt="First Class">
-                    <h4>First Training Class</h4>
-                    <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                    <h4>MAX training</h4>
+                    <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll. Kiválóan alkalmas zsírégetésre is.</p>
                     <div class="main-button">
-                        <a href="#">View Schedule</a>
+                        <a href="MAXTraining.php">Mutass Többet</a>
                     </div>
                   </article>
                   <article id='tabs-2'>

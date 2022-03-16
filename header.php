@@ -3,8 +3,8 @@
     <meta charset="utf-8">
 
 
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<!--    <meta name="author" content="">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">-->
 
     <title >Fitness Vital</title>
 
@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+<!--    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
 
@@ -37,16 +38,16 @@
 </div>
 <!-- ***** Preloader End ***** -->
 
-<!-- ***** Header Area Start ***** -->
+
+
 <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
+
                     <a href="index.php" class="logo">FITNESS<em> VITAL</em></a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
+
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="#top" class="active">KEZDŐLAP</a></li>
                         <li class="scroll-to-section"><a href="#prices">ÁRAK</a></li>
@@ -59,13 +60,13 @@
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
+
                 </nav>
             </div>
         </div>
     </div>
 </header>
-<!-- ***** Header Area End ***** -->
+
 
 
 

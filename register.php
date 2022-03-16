@@ -5,8 +5,8 @@
     <meta charset="utf-8">
 
 
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<!--    <meta name="author" content="">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">-->
 
     <title >Fitness Vital</title>
 
@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+<!--    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">-->
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
 
@@ -129,21 +129,21 @@
 
 
 
-<footer>
-    <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div>
-            <div class="col-lg-12">
-                <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>
-
-
-
-
-
-            </div>
-        </div>
-    </div>
-</footer>
-<?php //include "footer.php"?>
+<!--<footer>-->
+<!--    <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">-->
+<!--        <div>-->
+<!--            <div class="col-lg-12">-->
+<!--                <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+<?php include "footer.php"?>
 
 
 
