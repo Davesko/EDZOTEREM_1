@@ -145,7 +145,7 @@
                 <section class='tabs-content'>
                   <article id='tabs-1'>
                     <img src="assets/images/training-image-01.jpg" alt="First Class">
-                    <h4>MAX training</h4>
+                    <h4> MAX training<br>(Muscle Activity Excellence)</h4>
                     <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll. Kiválóan alkalmas zsírégetésre is.</p>
                     <div class="main-button">
                         <a href="MAXTraining.php">Mutass Többet</a>

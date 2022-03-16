@@ -3,8 +3,8 @@
     <meta charset="utf-8">
 
 
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<!--    <meta name="author" content="">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">-->
 
     <title >Fitness Vital</title>
 
@@ -50,8 +50,49 @@
     </div>
 </header>
 
-<h1>sdfsafda</h1>
 
 
 
+<section style="margin-top: 80px " class="section" id="MAX-to-action" >
+
+
+    <div class="container" >
+        <br>
+        <div class="row">
+            <div>
+                <div class="cta-content">
+                    <h2>MAX Training <br> (Muscle Activity Excellence)</h2>
+                    <br>
+                    <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll. Kiválóan alkalmas zsírégetésre is.</p>
+                    <div style="text-align: center" >
+
+
+
+                    <img src="assets/images/line-dec.png" alt="" ><p>Lényege, hogy 30 perc alatt elvégezhető.</p>
+                    <img src="assets/images/line-dec.png" alt="" ><p>Step lépcsőt használunk a gyakorlatok végrehajtásához.</p>
+                    <img src="assets/images/line-dec.png" alt="" ><p>Férfiaknak és nőknek is egyaránt megfelelő edzés.</p>
+
+
+                    </div>
+
+                    <p>HÉTFŐ (késő délután, este)</p>
+                    <p>SZERDA (Késő délután, este)</p>
+                    <p>Péntek (Késő délután, este)</p>
+
+                    <p>Ha kedvet kaptál és kipróbálnád, akkor jelentkezz a profilodnál!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<div style="position: fixed;bottom: 0px ;width:100%;">
 <?php include "footer.php"?>
+</div>
+
+</body>
+

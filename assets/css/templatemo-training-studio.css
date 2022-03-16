@@ -718,6 +718,18 @@ subscribe
   text-align: center;
 }
 
+#max-to-action {
+  padding: 120px 0px;
+  background-image: url(../images/M.A.X..jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  /*opacity: 0.3;*/
+
+
+}
+
 .cta-content h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -1267,6 +1279,8 @@ responsive
   vertical-align : bottom;
   height : 1px;
 }
+
+
 
 
 

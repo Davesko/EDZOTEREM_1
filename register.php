@@ -129,21 +129,10 @@
 
 
 
-<!--<footer>-->
-<!--    <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">-->
-<!--        <div>-->
-<!--            <div class="col-lg-12">-->
-<!--                <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-<?php include "footer.php"?>
+<div style="position: fixed;bottom: 0px ;width:100%;">
+    <?php include "footer.php"?>
+</div>
+
 
 
 

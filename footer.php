@@ -21,6 +21,10 @@
 
 
 <!-- ***** Footer Start *****-->
+
+<div style="background-color: white ; width:100%;">
+
+
 <footer>
     <div class=" justify-content-center justify-content-lg-between p-4 border-bottom">
         <div>
@@ -28,11 +32,11 @@
                 <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>
 
 
-
-
             </div>
         </div>
     </div>
+
+</div>
 </footer>
 
 
