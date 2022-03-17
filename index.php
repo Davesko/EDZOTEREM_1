@@ -91,7 +91,7 @@
     </tbody>
     </table>
 
-  </div>>
+  </div>
         <br>
         <br>
         <br>
@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Our <em>Classes</em></h2>
+                        <h2>Külön<em>órák</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
                         <p>Válassz egy órát a specifikusabb és profibb edzés érdekében.</p>
                     </div>

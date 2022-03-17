@@ -180,7 +180,7 @@ body {
 
 .main-button a {
   display: inline-block;
-  font-size: 15px;
+  font-size: 10px;
   padding: 12px 20px;
   background-color: #ed563b;
   color: #fff;
@@ -188,7 +188,10 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   transition: all .3s;
+  horiz-align: center;
 }
+
+
 
 .main-button a:hover {
   background-color: #f9735b;
