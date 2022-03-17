@@ -22,7 +22,7 @@
 
 <!-- ***** Footer Start *****-->
 
-<div style="background-color: white ; width:100%;">
+<div style="background-color: white ; width:100%; bottom: 0;  ">
 
 
 <footer>

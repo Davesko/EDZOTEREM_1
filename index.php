@@ -135,7 +135,7 @@
               <div class="col-lg-4">
                 <ul>
                   <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">MAX training</a></li>
-                  <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Second Training Class</a></a></li>
+                  <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Funkcionális edzés</a></a></li>
                   <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Third Training Class</a></a></li>
                   <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li>
                   <div class="main-rounded-button"><a href="#">View All Schedules</a></div>
@@ -153,10 +153,10 @@
                   </article>
                   <article id='tabs-2'>
                     <img src="assets/images/training-image-02.jpg" alt="Second Training">
-                    <h4>Second Training Class</h4>
-                    <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h4>Funkcionális edzés</h4>
+                    <p>A funkcionális edzésen akár saját testsúllyal, akár más súllyal, olyan gyakorlatokat végzünk amelyekkel az egész testet átmozgatjuk.</p>
                     <div class="main-button">
-                        <a href="#">View Schedule</a>
+                        <a href="funkc.php">Mutass Többet</a>
                     </div>
                   </article>
                   <article id='tabs-3'>
@@ -164,7 +164,7 @@
                     <h4>Third Training Class</h4>
                     <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
                     <div class="main-button">
-                        <a href="#">View Schedule</a>
+                        <a href="#">Mutass Többet</a>
                     </div>
                   </article>
                   <article id='tabs-4'>
@@ -172,7 +172,7 @@
                     <h4>Fourth Training Class</h4>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum commodo et.</p>
                     <div class="main-button">
-                        <a href="#">View Schedule</a>
+                        <a href="#">Mutass Többet</a>
                     </div>
                   </article>
                 </section>
@@ -263,7 +263,7 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="assets/images/first-trainer.jpg" alt="">
+                            <img src="assets/images/palzsuzsa.jpg"   alt="">
                         </div>
                         <div class="down-content">
                             <span>Személyi edző</span>
@@ -276,7 +276,8 @@
                                 Szívesen segítek céljaid elérésében, legyen az akár alakformálás, testzsír csökkentés, állóképesség fejlesztés, izomzat erősítés vagy általános közérzetjavítás.
                             </p>
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#">+36 30 2235990<i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#">palzsuzsa237@gmail.com<i class=""></i></a></li>
 
                             </ul>
                         </div>
@@ -301,17 +302,26 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="assets/images/third-trainer.jpg" alt="">
+                            <img src="assets/images/orsai.jpg" alt="">
                         </div>
                         <div class="down-content">
-                            <span>Power Trainer</span>
-                            <h4>Paul D. Newman</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                            <span>Személyi edző</span>
+                            <h4>Orsai Gergely</h4>
+                            <p>Fiatalon számos sportág kipróbálása után a kézilabda lett az a sport, amelyet egészen 18 éves koromig eredményesen űztem. Sajnos egy sérülés miatt pályafutásomat egy időre befejeződött.
+                            </br></br>
+                            Pár év elteltével azonban éreztem, hogy hiányzik a mozgás, így jutottam el egy konditerembe.
+                            <br><br>
+                            1992 óta foglalkozom testépítéssel, 2005 től versenyszerűen. Ez idő alatt tapasztaltam, tanultam meg, hogy mi kell ahhoz, hogy megőrizd egészséged és tested elképzelését szerre tudd alakítani.
+                            <br><br>
+                            Közben a Testnevelési Főiskolán Testépítő és fitness- oktató képesítést szereztem.
+                            <br><br>
+                            Ha úgy érzed, hogy nem vagy elégedett magaddal és változtatni szeretnél segítek abban, hogy eligazodj a diéták és edzőgépek világában.
+
+
+                            </p>
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#">+36 30 9500550<i></i></a></li>
+
                             </ul>
                         </div>
                     </div>

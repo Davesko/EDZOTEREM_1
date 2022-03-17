@@ -103,6 +103,7 @@
                                     <div class="invalid-feedback mv-up">Please select a gender!</div>
                                 </div>
 
+
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label">Elfogadom a szerződési feltételeke!</label>
@@ -115,6 +116,16 @@
                                 </div>
                             </form>
                         </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
 
-    <link rel="stylesheet" href="assets/css/formStyle.css">
+
 
 </head>
 
@@ -32,7 +32,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.php" class="logo"><em>FITNESS</em> VITAL</a>
+                    <a href="index.php" class="logo" style="color: black"><em>FITNESS</em> VITAL</a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
@@ -50,14 +50,10 @@
     </div>
 </header>
 
+<body>
 
-
-
-<section style="margin-top: 80px " class="section" id="MAX-to-action" >
-
-
+<section style="margin-top: 80px ; height: 800px" class="section" id="MAX-to-action" >
     <div class="container" >
-        <br>
         <div class="row">
             <div>
                 <div class="cta-content">
@@ -81,6 +77,7 @@
 
                     <p>Ha kedvet kaptál és kipróbálnád, akkor jelentkezz a profilodnál!</p>
 
+
                 </div>
             </div>
         </div>
@@ -90,9 +87,12 @@
 
 </section>
 
-<div style="position: fixed;bottom: 0px ;width:100%;">
+
+
+
 <?php include "footer.php"?>
-</div>
+
+
 
 </body>
 
