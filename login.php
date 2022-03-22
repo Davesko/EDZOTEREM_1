@@ -67,15 +67,11 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3>Regisztrálj te is</h3>
+                        <h3>Lépj be a fiókodba</h3>
                         <p>Töltsd ki a mezőket</p>
                         <form class="requires-validation" novalidate>
 
-                            <div class="col-md-12">
-                                <input class="form-control" type="text" name="name" placeholder="Teljes név" required>
-                                <div class="valid-feedback">Username field is valid!</div>
-                                <div class="invalid-feedback">Username field cannot be blank!</div>
-                            </div>
+
                             <div class="col-md-12">
                                 <input class="form-control" type="email" name="email" placeholder="E-mail címed" required>
                                 <div class="valid-feedback">Email field is valid!</div>
@@ -87,50 +83,23 @@
                                 <div class="invalid-feedback">Password field cannot be blank!</div>
                             </div>
 
-
-                            <div class="col-md-12 mt-3">
-                                <label class="mb-3 mr-1" for="gender">Nemed: </label>
-
-                                <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                                <label class="btn btn-sm btn-outline-secondary" for="male">Férfi</label>
-
-                                <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                                <label class="btn btn-sm btn-outline-secondary" for="female">Nő</label>
-
-                                <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                                <label class="btn btn-sm btn-outline-secondary" for="secret">Egyéb</label>
-                                <div class="valid-feedback mv-up">You selected a gender!</div>
-                                <div class="invalid-feedback mv-up">Please select a gender!</div>
-                            </div>
-
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label">Elfogadom a szerződési feltételeke!</label>
-                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
-                            </div>
-
-
-                            <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary">Regisztráció</button>
-                            </div>
                         </form>
+                        <div class="main-button scroll-to-section">
+
+                            <a href="register.php" style="font-size: 10px">Bejelentkezés</a>
+                        </div>
+                        <div class="main-button scroll-to-section">
+
+                            <a href="register.php" style="font-size: 10px">Regisztráció</a>
+                        </div>
                     </div>
-
-
-
-
-
-
-
-
-
 
                 </div>
             </div>
         </div>
 
     </div>
+
 
 
 </div>

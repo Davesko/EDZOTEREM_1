@@ -12,12 +12,12 @@
             <source src="assets/images/boxos.mp4" type="video/mp4" />
         </video>
 
-        <div class="video-overlay header-text">
+        <div class="video-overlay header-text" >
             <div class="caption">
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <h2>Fitness <em>Vital</em></h2>
                 <div class="main-button scroll-to-section">
-                    <a href="register.php">Légy te is tag</a>
+                    <a href="register.php" style="font-size: 18px">Légy te is tag</a>
                 </div>
             </div>
         </div>
