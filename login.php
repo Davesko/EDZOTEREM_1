@@ -1,4 +1,46 @@
+<?php require_once "config.php";
 
+
+
+if(isset($_POST["submit"])){
+    $error = [];
+    if(!isset($_POST["username"]) || $_POST["username"] == "" || strlen($_POST["username"]) > 30){
+        $error[]= "A felhasználnév nem lett helyesen megadva!";
+    }
+    if(!isset($_POST["password"]) || $_POST["password"] == "" || strlen($_POST["password"]) > 40){
+        $error[]= "A jelszó nem lett helyesen megadva!";
+    }
+    if(!isset($_POST["email"]) || $_POST["email"] == ""){
+        $error[]= "Az email nem lett helyesen megadva!";
+    }
+    if(count($error) > 0){
+        if ($error[0]){
+            echo $error[0];
+        }
+        if ($error[1]){
+            echo $error[1];
+        }
+        if ($error[2]){
+            echo $error[2];
+        }
+        exit;
+    }
+    $stmt = $db->prepare("INSERT INTO user (id, nev, jelszo, email, nem) VALUE(:id, :nev, :jelszo, :email, :nem)");
+    $stmt->bindValue(":nev", $_POST["username"]);
+    $pw = md5($_POST["password"]);
+    $stmt->bindValue(":pw", $pw);
+    $stmt->bindValue(":email", $_POST["email"]);
+    $stmt->bindValue(":id", "1");
+    if($stmt->execute())
+    {
+        echo "Sikeres reg!";
+    }
+    else{
+        die("Hiba");
+    }
+}
+
+?>
 
 <head>
 
@@ -43,7 +85,9 @@
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="index.php" class="active">KEZDŐLAP</a></li>
 
-                        <li class="main-button"><a href="register.php">Bejelentkezés</a></li>
+                        <li class="main-button"><a href="register.php">Regisztráció</a></li>
+
+
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -74,24 +118,20 @@
 
                             <div class="col-md-12">
                                 <input class="form-control" type="email" name="email" placeholder="E-mail címed" required>
-                                <div class="valid-feedback">Email field is valid!</div>
-                                <div class="invalid-feedback">Email field cannot be blank!</div>
+                                <div class="valid-feedback">"Email" helyesen megadva!</div>
+                                <div class="invalid-feedback">"Email" nem lehet üres!</div>
                             </div>
                             <div class="col-md-12">
-                                <input class="form-control" type="password" name="password" placeholder="Jelszó" required>
-                                <div class="valid-feedback">Password field is valid!</div>
-                                <div class="invalid-feedback">Password field cannot be blank!</div>
+                                <input class="form-control" type="password" name="jelszo" placeholder="Jelszó" required>
+                                <div class="valid-feedback">"Jelszó" helyesen megadva!</div>
+                                <div class="invalid-feedback">"Jelszó" nem lehet üres!</div>
                             </div>
-
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Regisztráció</button>
+                            </div>
                         </form>
-                        <div class="main-button scroll-to-section">
 
-                            <a href="register.php" style="font-size: 10px">Bejelentkezés</a>
-                        </div>
-                        <div class="main-button scroll-to-section">
 
-                            <a href="register.php" style="font-size: 10px">Regisztráció</a>
-                        </div>
                     </div>
 
                 </div>

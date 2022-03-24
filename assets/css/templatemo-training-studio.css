@@ -180,7 +180,7 @@ body {
 
 .main-button a {
   display: inline-block;
-  font-size: 10px;
+  font-size: 15px;
   padding: 12px 20px;
   background-color: #ed563b;
   color: #fff;
@@ -291,7 +291,7 @@ header
   padding-right: 20px;
 }
 
-.header-area .main-nav .nav li a {
+.header-area .main-nav .nav li a  {
   display: block;
   font-weight: 500;
   font-size: 13px;
@@ -1298,8 +1298,9 @@ responsive
 
 
 
-
-
+.loginlogo{
+  color: rgba(250,250,250,0.99) !important;
+}
 
 
 

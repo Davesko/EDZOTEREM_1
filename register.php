@@ -1,4 +1,46 @@
+<?php require_once "config.php";
 
+
+
+if(isset($_POST["submit"])){
+    $error = [];
+    if(!isset($_POST["username"]) || $_POST["username"] == "" || strlen($_POST["username"]) > 30){
+        $error[]= "A felhasználnév nem lett helyesen megadva!";
+    }
+    if(!isset($_POST["password"]) || $_POST["password"] == "" || strlen($_POST["password"]) > 40){
+        $error[]= "A jelszó nem lett helyesen megadva!";
+    }
+    if(!isset($_POST["email"]) || $_POST["email"] == ""){
+        $error[]= "Az email nem lett helyesen megadva!";
+    }
+    if(count($error) > 0){
+        if ($error[0]){
+            echo $error[0];
+        }
+        if ($error[1]){
+            echo $error[1];
+        }
+        if ($error[2]){
+            echo $error[2];
+        }
+        exit;
+    }
+    $stmt = $db->prepare("INSERT INTO user (user_name, user_password, user_email, web_admin) VALUE(:nam, :pw, :email, :jog)");
+    $stmt->bindValue(":nam", $_POST["username"]);
+    $pw = md5($_POST["password"]);
+    $stmt->bindValue(":pw", $pw);
+    $stmt->bindValue(":email", $_POST["email"]);
+    $stmt->bindValue(":jog", "1");
+    if($stmt->execute())
+    {
+        echo "Sikeres reg!";
+    }
+    else{
+        die("Hiba");
+    }
+}
+
+?>
 
 <head>
 
@@ -8,7 +50,7 @@
 <!--    <meta name="author" content="">-->
 <!--    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">-->
 
-    <title >Fitness Vital</title>
+    <title>Fitness Vital</title>
 
 
     <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
