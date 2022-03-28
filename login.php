@@ -2,7 +2,7 @@
 
 
 
-if(isset($_POST["submit"])){
+if(isset($_POST["login"])){
     $error = [];
     if(!isset($_POST["username"]) || $_POST["username"] == "" || strlen($_POST["username"]) > 30){
         $error[]= "A felhasználnév nem lett helyesen megadva!";
@@ -10,35 +10,39 @@ if(isset($_POST["submit"])){
     if(!isset($_POST["password"]) || $_POST["password"] == "" || strlen($_POST["password"]) > 40){
         $error[]= "A jelszó nem lett helyesen megadva!";
     }
-    if(!isset($_POST["email"]) || $_POST["email"] == ""){
-        $error[]= "Az email nem lett helyesen megadva!";
-    }
+
     if(count($error) > 0){
         if ($error[0]){
-            echo $error[0];
+            echo $error[0]. PHP_EOL;
         }
         if ($error[1]){
-            echo $error[1];
+            echo $error[1]. PHP_EOL;
         }
         if ($error[2]){
             echo $error[2];
         }
         exit;
     }
-    $stmt = $db->prepare("INSERT INTO user (id, nev, jelszo, email, nem) VALUE(:id, :nev, :jelszo, :email, :nem)");
+    $stmt = $db->prepare("INSERT * FROM felhasznalo where nev = :nev AND jelszo = :jelszo");
     $stmt->bindValue(":nev", $_POST["username"]);
     $pw = md5($_POST["password"]);
-    $stmt->bindValue(":pw", $pw);
-    $stmt->bindValue(":email", $_POST["email"]);
-    $stmt->bindValue(":id", "1");
-    if($stmt->execute())
+    $stmt->bindValue(":jelszo", $pw);
+    $stmt->execute();
+    $row = $stmt->rowCount();
+    $fetch = $stmt->fetch();
+    if($row > 0)
     {
-        echo "Sikeres reg!";
+        $_SESSION['userID'] = $fetch['id'];
+        header("location: /index.php");
     }
     else{
-        die("Hiba");
+        die("adfdsaf");
     }
+
+
 }
+
+
 
 ?>
 
@@ -113,11 +117,11 @@ if(isset($_POST["submit"])){
                     <div class="form-items">
                         <h3>Lépj be a fiókodba</h3>
                         <p>Töltsd ki a mezőket</p>
-                        <form class="requires-validation" novalidate>
+                        <form action="login.php" method="post" class="requires-validation" novalidate>
 
 
                             <div class="col-md-12">
-                                <input class="form-control" type="email" name="email" placeholder="E-mail címed" required>
+                                <input class="form-control" type="username" name="username" placeholder="Felhasználó" required>
                                 <div class="valid-feedback">"Email" helyesen megadva!</div>
                                 <div class="invalid-feedback">"Email" nem lehet üres!</div>
                             </div>
@@ -127,7 +131,7 @@ if(isset($_POST["submit"])){
                                 <div class="invalid-feedback">"Jelszó" nem lehet üres!</div>
                             </div>
                             <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary">Regisztráció</button>
+                                <button id="login" type="submit" name="login" class="btn btn-primary">Belépés</button>
                             </div>
                         </form>
 

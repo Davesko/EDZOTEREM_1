@@ -25,12 +25,13 @@ if(isset($_POST["submit"])){
         }
         exit;
     }
-    $stmt = $db->prepare("INSERT INTO user (user_name, user_password, user_email, web_admin) VALUE(:nam, :pw, :email, :jog)");
-    $stmt->bindValue(":nam", $_POST["username"]);
+    $stmt = $db->prepare("INSERT INTO felhasznalo (nev, jelszo, email, nem, web_admin) VALUE(:nev, :jelszo, :email, :nem, :jog)");
+    $stmt->bindValue(":nev", $_POST["username"]);
     $pw = md5($_POST["password"]);
-    $stmt->bindValue(":pw", $pw);
+    $stmt->bindValue(":jelszo", $pw);
+    $stmt->bindValue(":nem", $_POST["gender"]);
     $stmt->bindValue(":email", $_POST["email"]);
-    $stmt->bindValue(":jog", "1");
+    $stmt->bindValue(":jog", 1);
     if($stmt->execute())
     {
         echo "Sikeres reg!";
@@ -39,6 +40,13 @@ if(isset($_POST["submit"])){
         die("Hiba");
     }
 }
+
+if (!isset($_POST['submit'])){
+    $_SESSION['user'] = $_POST['username'];
+    $_SESSION['pass'] = $_POST['password'];
+    $_SESSION['admin'] = 1;
+}
+
 
 ?>
 
@@ -85,7 +93,7 @@ if(isset($_POST["submit"])){
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="index.php" class="active">KEZDŐLAP</a></li>
 
-                        <li class="main-button"><a href="register.php">Bejelentkezés</a></li>
+                        <li class="main-button"><a href="login.php">Bejelentkezés</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -103,6 +111,8 @@ if(isset($_POST["submit"])){
 <!-- ***** Main Banner Area Start ***** -->
 
 
+
+
 <div class="video-overlay" >
         <div class="form-body">
             <div class="row justify-content-center">
@@ -111,50 +121,46 @@ if(isset($_POST["submit"])){
                         <div class="form-items">
                             <h3>Regisztrálj te is</h3>
                             <p>Töltsd ki a mezőket</p>
-                            <form class="requires-validation" novalidate>
+                            <form action="register.php" method="post" class="requires-validation" novalidate >
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="name" placeholder="Teljes név" required>
-                                    <div class="valid-feedback">Username field is valid!</div>
-                                    <div class="invalid-feedback">Username field cannot be blank!</div>
+                                    <input class="form-control" type="text" name="username" placeholder="Teljes név" required>
+
                                 </div>
                                 <div class="col-md-12">
                                     <input class="form-control" type="email" name="email" placeholder="E-mail címed" required>
-                                    <div class="valid-feedback">Email field is valid!</div>
-                                    <div class="invalid-feedback">Email field cannot be blank!</div>
+
                                 </div>
                                 <div class="col-md-12">
                                     <input class="form-control" type="password" name="password" placeholder="Jelszó" required>
-                                    <div class="valid-feedback">Password field is valid!</div>
-                                    <div class="invalid-feedback">Password field cannot be blank!</div>
+
                                 </div>
 
 
                                 <div class="col-md-12 mt-3">
                                     <label class="mb-3 mr-1" for="gender">Nemed: </label>
 
-                                    <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                                    <input type="radio" value="0" class="btn-check" name="gender" id="male" autocomplete="off" required>
                                     <label class="btn btn-sm btn-outline-secondary" for="male">Férfi</label>
 
-                                    <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                                    <input type="radio" value="1" class="btn-check" name="gender" id="female" autocomplete="off" required>
                                     <label class="btn btn-sm btn-outline-secondary" for="female">Nő</label>
 
-                                    <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                                    <input type="radio" value="2" class="btn-check" name="gender" id="secret" autocomplete="off" required>
                                     <label class="btn btn-sm btn-outline-secondary" for="secret">Egyéb</label>
-                                    <div class="valid-feedback mv-up">You selected a gender!</div>
-                                    <div class="invalid-feedback mv-up">Please select a gender!</div>
+
                                 </div>
 
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label">Elfogadom a szerződési feltételeke!</label>
-                                    <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+
                                 </div>
 
 
                                 <div class="form-button mt-3">
-                                    <button id="submit" type="submit" class="btn btn-primary">Regisztráció</button>
+                                    <button id="submit" name="submit" type="submit" class="btn btn-primary">Regisztráció</button>
                                 </div>
                             </form>
                         </div>
