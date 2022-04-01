@@ -93,7 +93,7 @@ if (!isset($_POST['submit'])){
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="index.php" class="active">KEZDŐLAP</a></li>
 
-                        <li class="main-button"><a href="login.php">Bejelentkezés</a></li>
+                        <li class="main-button"><a href="login.php" style="color: black" >Bejelentkezés</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>

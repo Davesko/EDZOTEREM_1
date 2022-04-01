@@ -55,7 +55,7 @@
                         <li class="scroll-to-section"><a href="#trainers">EDZŐINK</a></li>
                         <li class="scroll-to-section"><a href="#contact-us">KONTAKT</a></li>
 
-                        <li style="border: 2px solid #ed563b" class="scroll-to-section"><a href="login.php">BEJELENTKEZÉS</a></li>
+                        <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="login.php">BEJELENTKEZÉS</a></li>
 
 
                         <a href="" style="margin-left: 40px" class="scroll-to-section" >

@@ -89,7 +89,7 @@ if(isset($_POST["login"])){
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="index.php" class="active">KEZDŐLAP</a></li>
 
-                        <li class="main-button"><a href="register.php">Regisztráció</a></li>
+                        <li class="main-button"><a href="register.php" style="color: black">Regisztráció</a></li>
 
 
                     </ul>
