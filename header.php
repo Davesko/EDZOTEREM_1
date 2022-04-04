@@ -54,9 +54,12 @@
                         <li class="scroll-to-section"><a href="#schedule">MENETREND</a></li>
                         <li class="scroll-to-section"><a href="#trainers">EDZŐINK</a></li>
                         <li class="scroll-to-section"><a href="#contact-us">KONTAKT</a></li>
-
+                        <?php if(!isset($_SESSION['userID'])):?>
                         <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="login.php">BEJELENTKEZÉS</a></li>
-
+                        <?php else:?>
+                        <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="logout.php">KIJELENTKEZÉS</a></li>
+                        <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="admin.php">ADMIN</a></li>
+                        <?php endif;?>
 
                         <a href="" style="margin-left: 40px" class="scroll-to-section" >
                         <svg  xmlns="http://www.w3.org/2000/svg" style="color: white" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 15 15">

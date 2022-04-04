@@ -12,31 +12,24 @@ if(isset($_POST["login"])){
     }
 
     if(count($error) > 0){
-        if ($error[0]){
-            echo $error[0]. PHP_EOL;
-        }
-        if ($error[1]){
-            echo $error[1]. PHP_EOL;
-        }
-        if ($error[2]){
-            echo $error[2];
-        }
+        foreach ($error as $value)
+        echo $value. PHP_EOL;
         exit;
     }
-    $stmt = $db->prepare("INSERT * FROM felhasznalo where nev = :nev AND jelszo = :jelszo");
+    $stmt = $db->prepare("SELECT * FROM felhasznalo WHERE nev = :nev");
     $stmt->bindValue(":nev", $_POST["username"]);
-    $pw = md5($_POST["password"]);
-    $stmt->bindValue(":jelszo", $pw);
     $stmt->execute();
-    $row = $stmt->rowCount();
     $fetch = $stmt->fetch();
-    if($row > 0)
+    if($fetch['jelszo'] == md5($_POST['password']))
     {
         $_SESSION['userID'] = $fetch['id'];
         header("location: /index.php");
     }
     else{
-        die("adfdsaf");
+        echo $fetch['jelszo'];
+        echo "<br>";
+        echo md5($_POST['password']);
+        die("Rák");
     }
 
 
@@ -121,12 +114,12 @@ if(isset($_POST["login"])){
 
 
                             <div class="col-md-12">
-                                <input class="form-control" type="username" name="username" placeholder="Felhasználó" required>
+                                <input class="form-control" type="text" name="username" placeholder="Felhasználó" required>
                                 <div class="valid-feedback">"Email" helyesen megadva!</div>
                                 <div class="invalid-feedback">"Email" nem lehet üres!</div>
                             </div>
                             <div class="col-md-12">
-                                <input class="form-control" type="password" name="jelszo" placeholder="Jelszó" required>
+                                <input class="form-control" type="password" name="password" placeholder="Jelszó" required>
                                 <div class="valid-feedback">"Jelszó" helyesen megadva!</div>
                                 <div class="invalid-feedback">"Jelszó" nem lehet üres!</div>
                             </div>
