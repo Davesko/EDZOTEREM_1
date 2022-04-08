@@ -53,7 +53,7 @@
 <body>
 
 <section style="margin-top: 80px ; height: 800px" class="section" id="MAX-to-action" >
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div>
                 <div class="cta-content">

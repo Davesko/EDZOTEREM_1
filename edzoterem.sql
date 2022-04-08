@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Ápr 08. 09:01
--- Kiszolgáló verziója: 10.4.20-MariaDB
--- PHP verzió: 8.0.9
+-- Gép: localhost:8889
+-- Létrehozás ideje: 2022. Ápr 08. 07:22
+-- Kiszolgáló verziója: 5.7.34
+-- PHP verzió: 8.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `edzoterem`
 --
+CREATE DATABASE IF NOT EXISTS `edzoterem` DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+USE `edzoterem`;
 
 -- --------------------------------------------------------
 
