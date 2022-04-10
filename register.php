@@ -124,7 +124,7 @@ if (!isset($_POST['submit'])){
                             <form action="register.php" method="post" class="requires-validation" novalidate >
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="username" placeholder="Teljes név" required>
+                                    <input class="form-control" type="text" name="username" placeholder="Felhasználó:" required>
 
                                 </div>
                                 <div class="col-md-12">

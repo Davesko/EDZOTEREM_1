@@ -111,7 +111,7 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
                         <h2>NE GONDOLKOZZ, <em>CSELEKEDJ</em> MÉG<em> MA</em>!</h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+                        <p>Gyere be houzzánk egy edzésre, nem fogsz csalódni!</p>
                         <div class="main-button scroll-to-section">
                             <a href="#our-classes">Legyél te is tag</a>
                         </div>
