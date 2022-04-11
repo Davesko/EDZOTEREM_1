@@ -119,9 +119,11 @@
                     <div class="cta-content">
                         <h2>NE GONDOLKOZZ, <em>CSELEKEDJ</em> MÉG<em> MA</em>!</h2>
                         <p>Gyere be houzzánk egy edzésre, nem fogsz csalódni!</p>
+                        <?php if(!isset($_SESSION["userID"])): ?>
                         <div class="main-button scroll-to-section">
                             <a href="#our-classes">Legyél te is tag</a>
                         </div>
+                        <?php endif;?>
                     </div>
                 </div>
             </div>
