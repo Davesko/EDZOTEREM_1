@@ -23,9 +23,12 @@
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>
                 <h2>Fitness <em>Vital</em></h2>
-                <div class="main-button scroll-to-section">
-                    <a href="register.php" style="font-size: 18px">Légy te is tag</a>
-                </div>
+                <?php if(!isset($_SESSION["userID"])): ?>
+                    <div class="main-button scroll-to-section">
+                        <a href="register.php" style="font-size: 18px">Légy te is tag</a>
+                    </div>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
