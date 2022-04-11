@@ -18,7 +18,7 @@
         <div class="video-overlay header-text" >
             <div class="caption">
                 <?php if(isset($_SESSION["nev"])): ?>
-                <h6>Nézz be hozzánk egy edzésre, <?=$_SESSION['nev']?></h6>
+                <h6>Nézz be hozzánk egy edzésre <br><?=$_SESSION['nev']?></h6>
                 <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>

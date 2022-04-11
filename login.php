@@ -24,7 +24,10 @@ if(isset($_POST["login"])){
     {
         $_SESSION['userID'] = $fetch['id'];
         $_SESSION['webAdmin'] = $fetch['web_admin'];
+
         $_SESSION['nev'] = $fetch['nev'];
+        $_SESSION['email'] = $fetch['email'];
+        $_SESSION['nem'] = $fetch['nem'];
 
         header("location: /index.php");
     }

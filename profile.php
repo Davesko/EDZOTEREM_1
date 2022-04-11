@@ -58,22 +58,63 @@ $orak = $stmt->fetchAll();
 <div class="video-overlay" >
     <div class="form-body">
         <div class="row justify-content-center">
-                        <h2>Profilod</h2>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <form>
-                <select>
-                    <option selected disabled>Kérjük válassz ki egy órát!</option>
-                    <?php foreach ($orak as $ora):?>
-                    <?php $sor = $ora['datum'] . " - " . $ora['nev'];?>
-                        <option value="<?=$ora['oraID']?>"><?=$sor?></option>
-                    <?php endforeach;?>
-                </select>
-            </form>
+
+            <div class="form-holder">
+
+                <div class="form-content">
+
+                    <div class="form-items">
+
+                        <h1 style="align-content: center">Profilod Adatai:</h1>
+
+                        <table class="table justify-content-center" style="color: white; width: 1000px">
+
+                            <thead class="align-middle">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Felhasználóneved: </th>
+                                <td><?php echo strtoupper($_SESSION['nev'])?></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">E-mail címed: </th>
+                                <td><?php echo strtoupper($_SESSION['email'])?></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">Nemed: </th>
+                                <td><?php if ($_SESSION['nem'] == 0){
+                                        echo "Férfi";
+                                    }
+                                    else{
+                                        echo "Nő";
+                                    }
+                                    ?></td>
+
+                            </tr>
+
+                            </tbody>
+                        </table
+
+                        <form action="profile.php" method="post" class="requires-validation" novalidate>
+                                <h3>Szeretne órákra jelentkezni?</h3>
+                                <h5>Itt megteheti!</h5>
+                                <select>
+                                    <option selected disabled> Kérjük válassz ki egy órát! </option>
+                                    <?php foreach ($orak as $ora):?>
+                                    <?php $sor = $ora['datum'] . " - " . $ora['nev'];?>
+                                        <option value="<?=$ora['oraID']?>"><?=$sor?></option>
+                                    <?php endforeach;?>
+                                </select>
+
+                         </form>
 
 
         </div>

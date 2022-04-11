@@ -53,10 +53,34 @@ html, body {
     transition: all 0.4s ease;
 }
 
+.form-content h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 .form-content h3 {
     color: #fff;
     text-align: left;
     font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h5 {
+    color: #fff;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h6 {
+    color: #fff;
+    text-align: left;
+    font-size: 10px;
     font-weight: 600;
     margin-bottom: 5px;
 }
