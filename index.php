@@ -17,7 +17,11 @@
 
         <div class="video-overlay header-text" >
             <div class="caption">
+                <?php if(isset($_SESSION["nev"])): ?>
+                <h6>Nézz be hozzánk egy edzésre, <?=$_SESSION['nev']?></h6>
+                <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
+                <?php endif;?>
                 <h2>Fitness <em>Vital</em></h2>
                 <div class="main-button scroll-to-section">
                     <a href="register.php" style="font-size: 18px">Légy te is tag</a>

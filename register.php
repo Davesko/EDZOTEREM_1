@@ -41,7 +41,7 @@ if(isset($_POST["submit"])){
     }
 }
 
-if (!isset($_POST['submit'])){
+if (isset($_POST['submit'])){
     $_SESSION['user'] = $_POST['username'];
     $_SESSION['pass'] = $_POST['password'];
     $_SESSION['admin'] = 1;
@@ -63,8 +63,9 @@ if (!isset($_POST['submit'])){
 
     <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
 
-
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">-->
 
 <!--    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">-->
 
@@ -124,7 +125,7 @@ if (!isset($_POST['submit'])){
                             <form action="register.php" method="post" class="requires-validation" novalidate >
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="username" placeholder="Felhasználó:" required>
+                                    <input class="form-control" type="text" name="username" placeholder="Felhasználó" required>
 
                                 </div>
                                 <div class="col-md-12">
