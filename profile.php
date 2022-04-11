@@ -3,6 +3,10 @@ require_once "config.php";
 if(!isset($_SESSION['userID']) || $_SESSION['userID'] == null || $_SESSION['userID'] == ""){
     header('Location: /index.php');
 }
+
+$stmt = $db->query("SELECT * FROM orak INNER JOIN edzok ON edzok.userID = orak.edzoID WHERE orak.userID IS NULL");
+$stmt->execute();
+$orak = $stmt->fetchAll();
 ?>
 <html>
 <head>
@@ -50,24 +54,33 @@ if(!isset($_SESSION['userID']) || $_SESSION['userID'] == null || $_SESSION['user
         </div>
     </div>
 </header>
-<body style="background-color: #1d2124">
 
 <div class="video-overlay" >
     <div class="form-body">
         <div class="row justify-content-center">
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <h3>Profilod</h3>
+                        <h2>Profilod</h2>
 
-                    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form>
+                <select>
+                    <option selected disabled>Kérjük válassz ki egy órát!</option>
+                    <?php foreach ($orak as $ora):?>
+                    <?php $sor = $ora['datum'] . " - " . $ora['nev'];?>
+                        <option value="<?=$ora['oraID']?>"><?=$sor?></option>
+                    <?php endforeach;?>
+                </select>
+            </form>
 
-                </div>
-            </div>
+
         </div>
 
     </div>
 
+</div>
 
 
 </body>
