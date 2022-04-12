@@ -17,6 +17,7 @@ $stmt->execute();
 $orak = $stmt->fetchAll();
 ?>
 
+<body>
 <div class="video-overlay">
     <div class="form-body">
         <div class="row justify-content-center">
@@ -83,7 +84,10 @@ $orak = $stmt->fetchAll();
                                 <br>
                                 <input class="btn btn-outline-primary" type="submit" name="submit" value="Foglalás">
                          </form>
-
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </div>
 

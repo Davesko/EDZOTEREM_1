@@ -148,9 +148,9 @@
                 <ul>
                   <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">MAX training</a></li>
                   <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Funkcionális edzés</a></a></li>
-                  <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Third Training Class</a></a></li>
-                  <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li>
-                  <div class="main-rounded-button"><a href="#">View All Schedules</a></div>
+                  <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Pilates</a></a></li>
+                  <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Aerobic</a></a></li>
+
                 </ul>
               </div>
               <div class="col-lg-8">
@@ -224,20 +224,23 @@
                                 <tr>
                                     <td class="day-time">MAX</td>
                                     <td class="monday ts-item show" data-tsmeta="monday">10:00 - 12:30</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">2:00 - 3:30</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00 - 3:30</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00 - 3:30</td>
                                     <td>William G. Stewart</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Muscle Training</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                                    <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                                    <td>Paul D. Newman</td>
+                                    <td class="day-time">Zsírégető kondi</td>
+                                    <td class="monday ts-item" data-tsmeta="monday">8:15 - 10:00</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">8:15 - 10:00</td>
+                                    <td class="friday ts-item" data-tsmeta="friday">8:15 - 10:00</td>
+                                    <td>Pálfy Kriszti</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Body Building</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
-                                    <td>Boyd C. Harris</td>
+                                    <td class="day-time">Pilates</td>
+                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00 - 11:00</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">8:15 - 10:00</td>
+                                    <td class="thursday ts-item show" data-tsmeta="thursday">10:00 - 11:00</td>
+                                    <td>Kiss Réka</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Yoga Training Class</td>
@@ -345,7 +348,7 @@
 
 
 
-    <!-- ***** Contact Us Area Starts ***** -->
+    <!-- ***** Contact ***** -->
     <section class="section" id="contact-us">
         <div class="container-fluid">
             <div class="row">
@@ -360,7 +363,7 @@
                           <div class="row">
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                  <input name="name" type="text" id="name" placeholder="Your Name*" required="">
                               </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
