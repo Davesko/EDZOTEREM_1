@@ -31,7 +31,7 @@ if(isset($_POST["submit"])){
     $stmt->bindValue(":jelszo", $pw);
     $stmt->bindValue(":nem", $_POST["gender"]);
     $stmt->bindValue(":email", $_POST["email"]);
-    $stmt->bindValue(":jog", 1);
+    $stmt->bindValue(":jog", 0);
     if($stmt->execute())
     {
         echo "Sikeres reg!";

@@ -4,7 +4,7 @@ require_once "kisheader.php";
 
 <body>
 
-<section style="margin-top: 80px ; height: 800px" class="section" id="funkc-to-action" >
+<section style="margin-top: 80px ; height: 800px" class="section" id="edz-to-action" >
     <div class="container" >
         <div class="row">
             <div>
@@ -38,7 +38,7 @@ require_once "kisheader.php";
 
 
 
-<?php include "footer.php"?>
+<?php include "footer.php" ?>
 
 
 

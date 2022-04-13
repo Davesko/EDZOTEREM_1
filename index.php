@@ -18,7 +18,7 @@
         <div class="video-overlay header-text" >
             <div class="caption">
                 <?php if(isset($_SESSION["nev"])): ?>
-                <h6>Nézz be hozzánk egy edzésre <br><h3><?=$_SESSION['nev']?></h3></h6>
+                <h6>Nézz be hozzánk egy edzésre <br><em><?=$_SESSION['nev']?></em></h6>
                 <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>
@@ -156,15 +156,15 @@
               <div class="col-lg-8">
                 <section class='tabs-content'>
                   <article id='tabs-1'>
-                    <img src="assets/images/training-image-01.jpg" alt="First Class">
+                    <img src="assets/images/max_kiskep.jpg" alt="First Class">
                     <h4> MAX training<br>(Muscle Activity Excellence)</h4>
                     <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll. Kiválóan alkalmas zsírégetésre is.</p>
                     <div class="main-button">
-                        <a href="MAXTraining.php">Mutass Többet</a>
+                        <a href="/MAXTraining.php">Mutass Többet</a>
                     </div>
                   </article>
                   <article id='tabs-2'>
-                    <img src="assets/images/training-image-02.jpg" alt="Second Training">
+                    <img src="assets/images/fukncionalis-edzes_kiskep.jpg" alt="Second Training">
                     <h4>Funkcionális edzés</h4>
                     <p>A funkcionális edzésen akár saját testsúllyal, akár más súllyal, olyan gyakorlatokat végzünk amelyekkel az egész testet átmozgatjuk.</p>
                     <div class="main-button">
@@ -172,19 +172,19 @@
                     </div>
                   </article>
                   <article id='tabs-3'>
-                    <img src="assets/images/training-image-03.jpg" alt="Third Class">
-                    <h4>Third Training Class</h4>
-                    <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
+                    <img src="assets/images/pilates_kiskep.jpg" alt="Pilates">
+                    <h4>Pilates</h4>
+                    <p>A pilates tornagyakorlatok segítségével megnő az izmok és az ízületek állóképessége, csökken a sérülékenységük, illetve egy esetleges sérülésnél gyorsabb a regenerálódásuk.</p>
                     <div class="main-button">
-                        <a href="#">Mutass Többet</a>
+                        <a href="pilates.php">Mutass Többet</a>
                     </div>
                   </article>
                   <article id='tabs-4'>
-                    <img src="assets/images/training-image-04.jpg" alt="Fourth Training">
-                    <h4>Fourth Training Class</h4>
+                    <img src="assets/images/aerobic_kiskep.jpg" alt="Aerobic">
+                    <h4>Aerobic</h4>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum commodo et.</p>
                     <div class="main-button">
-                        <a href="#">Mutass Többet</a>
+                        <a href="aerobic.php">Mutass Többet</a>
                     </div>
                   </article>
                 </section>

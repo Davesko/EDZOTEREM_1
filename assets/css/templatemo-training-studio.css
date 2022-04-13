@@ -719,7 +719,7 @@ subscribe
   text-align: center;
 }
 
-#max-to-action {
+#edz-to-action {
   padding: 120px 0px;
   background-image: url(../images/M.A.X..jpg);
   background-position: center center;
@@ -731,17 +731,9 @@ subscribe
 
 }
 
-#funkc-to-action {
-  padding: 120px 0px;
-  background-image: url(../images/funkccover.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  /*opacity: 0.3;*/
 
 
-}
+
 
 .cta-content h2 {
   font-size: 36px;
