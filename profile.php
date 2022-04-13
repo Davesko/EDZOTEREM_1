@@ -16,14 +16,15 @@ $stmt = $db->query("SELECT * FROM orak INNER JOIN edzok ON edzok.userID = orak.e
 $stmt->execute();
 $orak = $stmt->fetchAll();
 ?>
-
-<body>
-<div class="video-overlay">
+<html style="background-color: white;">
+<body >
+<div class="video-overlay" >
     <div class="form-body">
         <div class="row justify-content-center">
 
 
-            <div class="form-holder">
+            <div class="form-holder"  style="padding-top: 30px ">
+
 
                 <div class="form-content">
 
@@ -85,7 +86,7 @@ $orak = $stmt->fetchAll();
                                 <select name="oraID">
                                     <option selected disabled> Kérjük válassz ki egy órát! </option>
                                     <?php foreach ($orak as $ora):?>
-                                    <?php $sor = $ora['tipus']  . " - " . $ora['nev']  ." - " . $ora['datum'] . "-" . $ora['ar'] . " Forint";?>
+                                    <?php $sor = $ora['tipus']  . " - " . $ora['nev']  ." - " . $ora['datum'] . " - " . $ora['ar'] . " Forint";?>
                                         <option value="<?=$ora['oraID']?>"><?=$sor?></option>
                                     <?php endforeach;?>
                                 </select>
@@ -106,8 +107,9 @@ $orak = $stmt->fetchAll();
                             </thead>
                             <tbody>
                             <tr>
-                                <th scope="row">Fogalt óráid: </th>
 
+                                <th scope="row">Fogalt óráid: </th>
+                            <tr><td></td></tr>
 
 
 
@@ -118,14 +120,19 @@ $orak = $stmt->fetchAll();
                                 $stmt->bindValue(":userID", $_SESSION['userID']);
                                 $stmt->execute();
                                 $lefoglaltorak = $stmt->fetchAll();
-
+                                $ar = 0
                                 ?>
 
                                 <?php foreach ($lefoglaltorak as $egyora):?>
-                                    <?php $sor = $egyora['tipus']  . " - " . $egyora['datum'] . "-" . $egyora['ar'] . " Forint";?>
+                                    <?php $ar = $ar + $egyora['ar'];
+                                    $sor = $egyora['tipus']  . " - "  . $egyora['datum'] . " - " . $egyora['ar'] . " Forint";?>
                                     <tr><td><?php echo($sor); ?></td></tr>
 
+
                                 <?php endforeach;?>
+                            <tr><td></td></tr>
+                            <tr><td>Eddig óráid összege: <b> <?php echo $ar?> Forint <b></td></tr>
+
 
 
 
@@ -134,7 +141,6 @@ $orak = $stmt->fetchAll();
 
                             </tbody>
                         </table
-
                     </div>
                 </div>
             </div>
