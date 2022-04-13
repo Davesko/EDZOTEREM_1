@@ -43,9 +43,9 @@ if(isset($_POST["submit"])){
 }
 
 if (isset($_POST['submit'])){
-    $_SESSION['nev'] = $_POST['username'];
-    $_SESSION['pass'] = $_POST['password'];
-    $_SESSION['admin'] = 1;
+    //$_SESSION['nev'] = $_POST['username'];
+    //$_SESSION['pass'] = $_POST['password'];
+    //$_SESSION['admin'] = 1;
 }
 
 
