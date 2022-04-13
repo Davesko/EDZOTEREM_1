@@ -107,12 +107,34 @@ $orak = $stmt->fetchAll();
                             <tbody>
                             <tr>
                                 <th scope="row">Fogalt óráid: </th>
-                                <th></th>
+
+
+
+
                             </tr>
+
+                                <?php
+                                $stmt = $db->prepare("SELECT * FROM orak WHERE `userID` = :userID");
+                                $stmt->bindValue(":userID", $_SESSION['userID']);
+                                $stmt->execute();
+                                $lefoglaltorak = $stmt->fetchAll();
+
+                                ?>
+
+                                <?php foreach ($lefoglaltorak as $egyora):?>
+                                    <?php $sor = $egyora['tipus']  . " - " . $egyora['datum'] . "-" . $egyora['ar'] . " Forint";?>
+                                    <tr><td><?php echo($sor); ?></td></tr>
+
+                                <?php endforeach;?>
+
+
+
+
 
 
                             </tbody>
                         </table
+
                     </div>
                 </div>
             </div>
