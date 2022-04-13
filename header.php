@@ -64,6 +64,8 @@
                         <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="admin.php">ADMIN</a></li>
                         <?php endif;?>
                         <?php endif;?>
+
+
                         <?php if(isset($_SESSION['userID'])):?>
                         <a href="/profile.php" style="margin-left: 40px" class="scroll-to-section" >
                         <svg  xmlns="http://www.w3.org/2000/svg" style="color: grey" width="40" height="40" fill="currentColor" class="bi bi-person flex-fill" viewBox="0 0 15 15">
@@ -74,7 +76,8 @@
                         <?php endif;?>
 
 
-                    </ul>
+
+
 
 
 

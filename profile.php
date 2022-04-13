@@ -30,6 +30,9 @@ $orak = $stmt->fetchAll();
                     <div class="form-items">
 
                         <h1 style="align-content: center">Profilod Adatai:</h1>
+
+
+
                         <br>
 
                         <table class="table justify-content-center" style="color: white; width: 1000px">
@@ -65,17 +68,24 @@ $orak = $stmt->fetchAll();
                             </tr>
 
                             </tbody>
-                        </table
+                        </table>
+
+                        <button class="btn btn-outline-primary"> <a href="profileEdit.php">Profilod szereksztése</a></button>
+<!--                        <input  class="btn btn-outline-primary" type="submit" name="submit" value=" Profilod szereksztése">-->
+
+
                         <br>
                         <br>
                         <br>
                         <form action="profile.php" method="post" class="requires-validation" novalidate>
                                 <h3>Szeretne órákra jelentkezni?</h3>
                                 <h5>Itt megteheti!</h5>
+
+
                                 <select name="oraID">
                                     <option selected disabled> Kérjük válassz ki egy órát! </option>
                                     <?php foreach ($orak as $ora):?>
-                                    <?php $sor = $ora['tipus']  . " - " . $ora['nev']  ." - " . $ora['datum'];?>
+                                    <?php $sor = $ora['tipus']  . " - " . $ora['nev']  ." - " . $ora['datum'] . "-" . $ora['ar'] . " Forint";?>
                                         <option value="<?=$ora['oraID']?>"><?=$sor?></option>
                                     <?php endforeach;?>
                                 </select>
@@ -84,6 +94,25 @@ $orak = $stmt->fetchAll();
                                 <br>
                                 <input class="btn btn-outline-primary" type="submit" name="submit" value="Foglalás">
                          </form>
+
+                        <table class="table justify-content-center" style="color: white; width: 1000px">
+
+                            <thead class="align-middle">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Fogalt óráid: </th>
+                                <th></th>
+                            </tr>
+
+
+                            </tbody>
+                        </table
                     </div>
                 </div>
             </div>

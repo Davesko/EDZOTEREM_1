@@ -32,10 +32,8 @@ if(isset($_POST["login"])){
         header("location: /index.php");
     }
     else{
-        echo $fetch['jelszo'];
-        echo "<br>";
-        echo md5($_POST['password']);
-        die("Rák");
+
+        die("A jelszó nem helyes!");
     }
 
 

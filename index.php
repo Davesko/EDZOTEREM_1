@@ -18,10 +18,11 @@
         <div class="video-overlay header-text" >
             <div class="caption">
                 <?php if(isset($_SESSION["nev"])): ?>
-                <h6>Nézz be hozzánk egy edzésre <br><em><?=$_SESSION['nev']?></em></h6>
+                    <h6 ">Nézz be hozzánk egy edzésre <br><div style="font-size: 40px ;padding-top: 20px"><?=$_SESSION['nev']?></div></h6>
                 <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>
+
                 <h2>Fitness <em>Vital</em></h2>
                 <?php if(!isset($_SESSION["userID"])): ?>
                     <div class="main-button scroll-to-section">
@@ -223,35 +224,37 @@
                             <tbody>
                                 <tr>
                                     <td class="day-time">MAX</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 12:30</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00 - 3:30</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00 - 3:30</td>
-                                    <td>William G. Stewart</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:00</td>
+                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00 - 11:00</td>
+
+                                    <td>Dobóczy Maja</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Zsírégető kondi</td>
-                                    <td class="monday ts-item" data-tsmeta="monday">8:15 - 10:00</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">8:15 - 10:00</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">8:15 - 10:00</td>
+                                    <td class="friday ts-item" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+
                                     <td>Pálfy Kriszti</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Pilates</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00 - 11:00</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">8:15 - 10:00</td>
-                                    <td class="thursday ts-item show" data-tsmeta="thursday">10:00 - 11:00</td>
+                                    <td class="monday ts-item show " data-tsmeta="monday">10:00 - 11:00</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:00</td>
+
                                     <td>Kiss Réka</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Yoga Training Class</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                    <td class="monday ts-item " data-tsmeta="monday">13:20 - 14:50</td>
+                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+
                                     <td>Hector T. Daigle</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Advanced Training</td>
-                                    <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                                    <td class="friday ts-item" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+
                                     <td>Bret D. Bowers</td>
                                 </tr>
                             </tbody>
