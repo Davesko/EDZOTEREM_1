@@ -28,14 +28,18 @@
 <footer>
     <div class=" justify-content-center justify-content-lg-between p-4 border-top">
         <div>
+            <a href="register.php" class="btn " >Regisztráció</a>
+            <a href="login.php" class="btn ">Bejelentkezés</a>
             <div class="col-lg-12">
+
                 <img style="height: 20px" src="assets/images/Fitness.png"> <img style="height: 20px" src="assets/images/Vital.png">
+                <br>
+                <br>
                 <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>
-
-
-
-
             </div>
+
+
+
         </div>
     </div>
 
