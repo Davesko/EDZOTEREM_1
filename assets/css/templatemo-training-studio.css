@@ -460,10 +460,6 @@ header
   margin-top: 20px !important;
 }
 
-.header-area.header-sticky .nav li a.active {
-  color: #ed563b;
-}
-
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -819,7 +815,7 @@ Our Classes
   border-bottom: none;
 }
 #tabs ul .ui-tabs-active a {
-  color: #FFF200;
+  color: lightslategrey;
 }
 #tabs ul .ui-tabs-active span {
   color: #1e1e1e;

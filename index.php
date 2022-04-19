@@ -148,10 +148,10 @@
             <div class="row" id="tabs">
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">MAX training</a></li>
-                  <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Funkcionális edzés</a></a></li>
-                  <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Pilates</a></a></li>
-                  <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Aerobic</a></a></li>
+                  <li><a href='#tabs-1'>MAX training</a></li>
+                  <li><a href='#tabs-2'>Funkcionális edzés</a></a></li>
+                  <li><a href='#tabs-3'>Pilates</a></a></li>
+                  <li><a href='#tabs-4'>Aerobic</a></a></li>
 
                 </ul>
               </div>
