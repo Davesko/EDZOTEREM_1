@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Ápr 11. 15:14
--- Kiszolgáló verziója: 10.4.20-MariaDB
--- PHP verzió: 8.0.9
+-- Host: 127.0.0.1
+-- Generation Time: Apr 20, 2022 at 12:15 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `edzoterem2`
+-- Database: `edzoterem2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `edzok`
+-- Table structure for table `edzok`
 --
 
 CREATE TABLE `edzok` (
@@ -33,19 +33,19 @@ CREATE TABLE `edzok` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `edzok`
+-- Dumping data for table `edzok`
 --
 
 INSERT INTO `edzok` (`userID`, `nev`) VALUES
-(1, 'Edző bácsi'),
 (2, 'Pál Zsuzsanna'),
 (3, 'Orsai Gergely'),
-(4, 'Dobóczy Maja');
+(4, 'Dobóczy Maja'),
+(6, 'Éliás-Szalay Dávid');
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `felhasznalo`
+-- Table structure for table `felhasznalo`
 --
 
 CREATE TABLE `felhasznalo` (
@@ -58,16 +58,39 @@ CREATE TABLE `felhasznalo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `felhasznalo`
+-- Dumping data for table `felhasznalo`
 --
 
 INSERT INTO `felhasznalo` (`id`, `nev`, `jelszo`, `email`, `nem`, `web_admin`) VALUES
-(1, 'david', '172522ec1028ab781d9dfd17eaca4427', 'nagyhazu.david@gmail.com', 0, 1);
+(4, 'david', '172522ec1028ab781d9dfd17eaca4427', 'nagyhazu.david@gmail.com', 2, 1),
+(5, 'davesko', 'e9417a059bddd1487bd81814230579fe', 'davesko@gmail.com', 1, 0),
+(6, 'geri', 'd41d8cd98f00b204e9800998ecf8427e', 'gerivagyok@gmail.com', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `orak`
+-- Table structure for table `kontakt`
+--
+
+CREATE TABLE `kontakt` (
+  `id` int(11) NOT NULL,
+  `nev` text COLLATE utf8_hungarian_ci NOT NULL,
+  `email` text COLLATE utf8_hungarian_ci NOT NULL,
+  `targy` text COLLATE utf8_hungarian_ci NOT NULL,
+  `tartalom` text COLLATE utf8_hungarian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- Dumping data for table `kontakt`
+--
+
+INSERT INTO `kontakt` (`id`, `nev`, `email`, `targy`, `tartalom`) VALUES
+(5, 'Nagyházu Dávid', 'nagyhazu.david@gmail.com', 'anya', 'apa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orak`
 --
 
 CREATE TABLE `orak` (
@@ -80,31 +103,39 @@ CREATE TABLE `orak` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `orak`
+-- Dumping data for table `orak`
 --
 
 INSERT INTO `orak` (`oraID`, `userID`, `edzoID`, `datum`, `tipus`, `ar`) VALUES
-(3, 1, 1, '2022-04-11 14:38:07', 'ahahahahaha', 1500),
-(4, 1, 4, '2022-04-11 14:06:32', 'ihiiihiiiihih', 2000);
+(8, 4, 4, '2022-04-15 23:39:36', 'MAX TRAINING', 3500),
+(9, 5, 2, '2022-04-15 23:40:01', 'FUNKCIONÁLIS EDZÉS', 1500),
+(11, 4, 3, '2022-04-15 23:40:34', 'SZEMÉLYI EDZÉS', 3000),
+(22, 4, 3, '2022-09-21 20:00:00', 'FUNKCIONÁLIS', 2000);
 
 --
--- Indexek a kiírt táblákhoz
+-- Indexes for dumped tables
 --
 
 --
--- A tábla indexei `edzok`
+-- Indexes for table `edzok`
 --
 ALTER TABLE `edzok`
   ADD PRIMARY KEY (`userID`);
 
 --
--- A tábla indexei `felhasznalo`
+-- Indexes for table `felhasznalo`
 --
 ALTER TABLE `felhasznalo`
   ADD PRIMARY KEY (`id`);
 
 --
--- A tábla indexei `orak`
+-- Indexes for table `kontakt`
+--
+ALTER TABLE `kontakt`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `orak`
 --
 ALTER TABLE `orak`
   ADD PRIMARY KEY (`oraID`),
@@ -112,33 +143,39 @@ ALTER TABLE `orak`
   ADD KEY `edzoID` (`edzoID`);
 
 --
--- A kiírt táblák AUTO_INCREMENT értéke
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT a táblához `edzok`
+-- AUTO_INCREMENT for table `edzok`
 --
 ALTER TABLE `edzok`
-  MODIFY `userID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `userID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT a táblához `felhasznalo`
+-- AUTO_INCREMENT for table `felhasznalo`
 --
 ALTER TABLE `felhasznalo`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT a táblához `orak`
+-- AUTO_INCREMENT for table `kontakt`
+--
+ALTER TABLE `kontakt`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `orak`
 --
 ALTER TABLE `orak`
-  MODIFY `oraID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `oraID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Megkötések a kiírt táblákhoz
+-- Constraints for dumped tables
 --
 
 --
--- Megkötések a táblához `orak`
+-- Constraints for table `orak`
 --
 ALTER TABLE `orak`
   ADD CONSTRAINT `orak_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `felhasznalo` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,

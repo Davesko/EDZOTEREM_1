@@ -22,7 +22,7 @@ if(isset($_POST["login"])){
     $fetch = $stmt->fetch();
     if($fetch['jelszo'] == md5($_POST['password']))
     {
-        $_SESSION['userID'] = $fetch['id'];
+        $_SESSION['id'] = $fetch['id'];
         $_SESSION['webAdmin'] = $fetch['web_admin'];
 
         $_SESSION['nev'] = $fetch['nev'];

@@ -1,13 +1,13 @@
 <?php
 require_once "config.php";
 require_once "kisheader.php";
-if(!isset($_SESSION['userID']) || $_SESSION['userID'] == null || $_SESSION['userID'] == ""){
+if(!isset($_SESSION['id']) || $_SESSION['id'] == null || $_SESSION['id'] == ""){
     header('Location: /index.php');
 }
 
 if(isset($_POST['submit'])){
     $stmt_update = $db->prepare("UPDATE orak SET userID = :userID WHERE oraID = :oraID");
-    $stmt_update->bindValue(":userID", $_SESSION['userID']);
+    $stmt_update->bindValue(":userID", $_SESSION['id']);
     $stmt_update->bindValue(":oraID", $_POST['oraID']);
     $stmt_update->execute();
 }
@@ -120,7 +120,7 @@ $orak = $stmt->fetchAll();
 
                                 <?php
                                 $stmt = $db->prepare("SELECT * FROM orak WHERE `userID` = :userID");
-                                $stmt->bindValue(":userID", $_SESSION['userID']);
+                                $stmt->bindValue(":userID", $_SESSION['id']);
                                 $stmt->execute();
                                 $lefoglaltorak = $stmt->fetchAll();
                                 $ar = 0
