@@ -39,7 +39,7 @@ if(isset($_POST["submit"])){
     else{
         die("Hiba");
     }
-    header("Location: /index.php");
+    header("Location: /login.php");
 }
 
 if (isset($_POST['submit'])){

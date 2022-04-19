@@ -61,8 +61,11 @@ $orak = $stmt->fetchAll();
                                 <td><?php if ($_SESSION['nem'] == 0){
                                         echo "Férfi";
                                     }
-                                    else{
+                                    elseif ($_SESSION['nem'] == 1){
                                         echo "Nő";
+                                    }
+                                    else{
+                                        echo "Egyéb";
                                     }
                                     ?></td>
 

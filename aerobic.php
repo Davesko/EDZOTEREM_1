@@ -9,19 +9,19 @@ require_once "kisheader.php";
         <div class="row">
             <div>
                 <div class="cta-content">
-                    <h2>Pilates</h2>
+                    <h2>Aerobic</h2>
                     <br>
-                    <p>A pilates torna elsősorban a hát- és gerincpanaszok, reumatikus és ízületi betegségek esetén jelent hatékony segítséget, de rendszeres gyakorlással erős, szálkás izomzat is felépíthető a gyakorlatok alkalmazásával. A speciális feladatok révén a has-, fenék- és csípő tájék átformálható, feszessé tehető.
+                    <p>Az aerobik a fizikai gyakorlatok egy formája, amely egyesíti a ritmikus aerob gyakorlatokat a nyújtással és az erősítő edzéssel, azzal a céllal, hogy javítsa az edzettség minden elemét. Általában zenére adják elő, és gyakorolhatják csoportos környezetben, oktató vezetésével, bár önállóan és zenei kíséret nélkül is
                     </p>
                     <div style="text-align: center" >
 
 
 
-                        <img src="assets/images/line-dec.png" alt="" ><p>helyes légzés</p>
-                        <img src="assets/images/line-dec.png" alt="" ><p>medence helyzete</p>
-                        <img src="assets/images/line-dec.png" alt="" ><p>mellkas helyzete</p>
-                        <img src="assets/images/line-dec.png" alt="" ><p>vállak helyzete</p>
-                        <img src="assets/images/line-dec.png" alt="" ><p>nyak- és fej helyzete</p>
+                        <img src="assets/images/line-dec.png" alt="" ><p>Basic Step</p>
+                        <img src="assets/images/line-dec.png" alt="" ><p>Repeater knee</p>
+                        <img src="assets/images/line-dec.png" alt="" ><p>Split Step</p>
+                        <img src="assets/images/line-dec.png" alt="" ><p>L-Step</p>
+                        <img src="assets/images/line-dec.png" alt="">
 
 
                     </div>

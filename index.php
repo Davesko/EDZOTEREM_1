@@ -2,6 +2,7 @@
 <html lang="en">
 
     <?php
+    $db = null;
     require_once "config.php";
     include "header.php";
     ?>
@@ -183,7 +184,7 @@
                   <article id='tabs-4'>
                     <img src="assets/images/aerobic_kiskep.jpg" alt="Aerobic">
                     <h4>Aerobic</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum commodo et.</p>
+                    <p>Az aerobik a fizikai gyakorlatok egy formája, amely egyesíti a ritmikus aerob gyakorlatokat a nyújtással és az erősítő edzéssel, azzal a céllal, hogy javítsa az edzettség minden elemét</p>
                     <div class="main-button">
                         <a href="aerobic.php">Mutass Többet</a>
                     </div>
@@ -304,11 +305,11 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="assets/images/second-trainer.jpg" alt="">
+                            <img src="assets/images/david.jpg" alt="">
                         </div>
                         <div class="down-content">
-                            <span>MAX edző</span>
-                            <h4>Dobóczy Maja</h4>
+                            <span>Személyi edző</span>
+                            <h4>Éliás-Szalay Dávid</h4>
                             <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
                             <ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -360,9 +361,24 @@
                       <iframe src="https://maps.google.com/maps?q=Le%C3%A1nyfalu%20fitness%20vital&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
+
+                <?php
+
+                if (isset($_POST["submit"])){
+
+
+                $stmt_add = $db->prepare("INSERT INTO kontakt (nev, email, targy, tartalom) VALUES ( :nev, :email, :subject, :message)");
+                $stmt_add->bindValue(":nev", $_POST["name"]);
+                $stmt_add->bindValue(":email", $_POST["email"]);
+                $stmt_add->bindValue(":subject", $_POST["subject"]);
+                $stmt_add->bindValue(":message", $_POST["message"]);
+                $stmt_add->execute();
+                }
+                ?>
+
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" method="post" action="/index.php">
                           <div class="row">
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
@@ -386,7 +402,7 @@
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                <input name="submit" type="submit" id="form-submit" class="main-button" value="Send Message">
                               </fieldset>
                             </div>
                           </div>

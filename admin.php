@@ -1,7 +1,8 @@
 <?php
 require_once "config.php";
 
-
+$stmt_edzok = $db->query("SELECT * FROM edzok");
+$stmt_edzok->execute();
 if (isset($_POST['submit'])){
     if(!isset($_POST['oraID']) || $_POST['oraID'] == ""){
         die("HIBA!!!444!");
@@ -9,6 +10,35 @@ if (isset($_POST['submit'])){
     $stmt = $db->prepare("DELETE FROM orak WHERE oraID = :ora");
     $stmt->bindValue(":ora", $_POST['oraID']);
     $stmt->execute();
+
+}
+
+if(isset($_POST['hozza'])){
+    $error = [];
+    if($_POST['edzo'] == null || $_POST['edzo'] == ""){
+        $error[] = "Add meg az edzőt!";
+    }
+    if($_POST['datum'] == null || $_POST['datum'] == ""){
+        $error[] = "Add meg a dátumot!";
+    }
+    if($_POST['tipus'] == null || $_POST['tipus'] == ""){
+        $error[] = "Add meg a típust!";
+    }
+    if($_POST['ar'] == null || $_POST['ar'] == "" || !is_numeric($_POST['ar'])){
+        $error[] = "Add meg az árat!";
+    }
+    if(count($error) > 0){
+        die("üres");
+    }
+    else{
+        $stmt_add = $db->prepare("INSERT INTO orak (userID, edzoID, datum, tipus, ar) VALUES (:userID, :edzoid, :datum, :tipus, :ar)");
+        $stmt_add->bindValue(":userID", $_SESSION['userID']);
+        $stmt_add->bindValue(":edzoid", $_POST['edzo']);
+        $stmt_add->bindValue(":datum", $_POST['datum']);
+        $stmt_add->bindValue(":tipus", $_POST['tipus']);
+        $stmt_add->bindValue(":ar", $_POST['ar']);
+        $stmt_add->execute();
+    }
 }
 
 ?>
@@ -54,15 +84,16 @@ if (isset($_POST['submit'])){
 </header>
 
 <div class="video-overlay" >
-    <div class="form-body">
-        <div class="row justify-content-center">
+    <div class="form-body" >
+        <div class="row justify-content-center" >
 
-            <div class="form-holder">
+            <div class="form-holder" >
 
-                <div class="form-content">
+                <div class="form-content" style="padding-top: 100px">
 
-                    <div class="form-items">
-
+                    <div class="form-items" >
+                        <h3>Órák törlése:</h3>
+                        <br>
 
 
 
@@ -71,10 +102,10 @@ if (isset($_POST['submit'])){
                                 $stmt->execute();
                                 $fetched = $stmt->fetchAll();
                                 foreach ($fetched as $item) :?>
-                                    <p style="height: 10px">Edző: <?=$item['nev']?><p>
-                                    <p style="height: 10px">Dátum: <?=$item['datum']?><p>
-                                    <p style="height: 10px">Típus: <?=$item['tipus']?><p>
-                                    <p style="height: 10px">Ár: <?=$item['ar']?> Ft<p>
+                                    <p style="height: 1px">Edző: <?=$item['nev']?><p>
+                                    <p style="height: 1px">Dátum: <?=$item['datum']?><p>
+                                    <p style="height: 1px">Típus: <?=$item['tipus']?><p>
+                                    <p style="height: 1px">Ár: <?=$item['ar']?> Ft<p>
                                     <form method="post" action="/admin.php" >
                                         <input type="hidden" name="oraID" value="<?=$item['oraID']?>"/>
                                         <input style="horiz-align: left" class="btn btn-outline-primary" type="submit" name="submit" value="Törlés">
@@ -84,8 +115,38 @@ if (isset($_POST['submit'])){
 
 
                     </div>
+                    <div class="form-items" >
+                        <h3>Órák hozzáadása adatbázishoz:</h3>
+                        <br>
 
+                        <form method="post" action="admin.php">
+                            <div class="col-md-12">
+                                <select name="edzo" id="edzo">
+                                    <?php foreach ($stmt_edzok as $edzo): ?>
+                                        <option value="<?=$edzo['userID']?>"><?=$edzo['nev']?></option>
+                                    <?php endforeach;?>
+                                </select>
+                            </div>
 
+                            <div class="col-md-12">
+                                <input class="form-control" type="datetime-local" name="datum" id="datum">
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="tipus" id="tipus" placeholder="Írd be a típust! " >
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="number" id="ar" name="ar" min="1" placeholder="Írd be az árat!" >
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <input id="hozza" name="hozza" type="submit" class="btn btn-primary" value="Óra hozzáadása">
+                            </div>
+                        </form>
+
+                    </div>
 
 
                 </div>

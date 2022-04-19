@@ -69,12 +69,13 @@ require_once "kisheader.php";
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="password" name="password"  placeholder="Ide írd az új jelszót! " >
+                                <input class="form-control" type="password" name="password"  placeholder="Ide írd az új jelszót!(vagy a régit) " >
                             </div>
 
                             <div class="form-button mt-3">
                                 <button id="submit" name="submit" type="submit" class="btn btn-primary">Adatok Frissítése</button>
                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
