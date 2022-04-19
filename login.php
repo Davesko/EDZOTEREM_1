@@ -152,7 +152,7 @@ if(isset($_POST["login"])){
 
 
 <div style="position: fixed;bottom: 0px ;width:100%;">
-    <?php include "footer.php"?>
+    <?php include "kisfooter.php"?>
 </div>
 
 
