@@ -129,7 +129,11 @@ $orak = $stmt->fetchAll();
                                 <?php foreach ($lefoglaltorak as $egyora):?>
                                     <?php $ar = $ar + $egyora['ar'];
                                     $sor = $egyora['tipus']  . " - "  . $egyora['datum'] . " - " . $egyora['ar'] . " Forint";?>
-                                    <tr><td><?php echo($sor); ?></td></tr>
+                                    <tr>
+                                        <td style="font-size: 15px"><?php echo($sor); ?>
+                                        </td>
+
+                                    </tr>
 
 
                                 <?php endforeach;?>
