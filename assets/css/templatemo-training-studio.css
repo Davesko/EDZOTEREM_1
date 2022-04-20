@@ -637,7 +637,7 @@ banner
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .main-banner .caption h2 {
@@ -647,7 +647,7 @@ banner
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: 0,5px;
 }
 
 .main-banner .caption h2 em {
