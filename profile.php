@@ -5,6 +5,12 @@ if(!isset($_SESSION['id']) || $_SESSION['id'] == null || $_SESSION['id'] == ""){
     header('Location: /index.php');
 }
 
+if(isset($_POST['torles'])){
+    $stmt_delete = $db->prepare("UPDATE orak SET userID = NULL WHERE oraID = :ora");
+    $stmt_delete->bindValue(":ora", $_POST['oraID']);
+    $stmt_delete->execute();
+}
+
 if(isset($_POST['submit'])){
     $stmt_update = $db->prepare("UPDATE orak SET userID = :userID WHERE oraID = :oraID");
     $stmt_update->bindValue(":userID", $_SESSION['id']);
@@ -99,7 +105,7 @@ $orak = $stmt->fetchAll();
                                 <input class="btn btn-outline-primary" type="submit" name="submit" value="Foglalás">
                          </form>
 
-                        <table class="table justify-content-center" style="color: white; width: 1000px">
+                        <table class="table justify-content-center" style="color: white; width: 1000px>
 
                             <thead class="align-middle">
                             <tr>
@@ -130,7 +136,11 @@ $orak = $stmt->fetchAll();
                                     <?php $ar = $ar + $egyora['ar'];
                                     $sor = $egyora['tipus']  . " - "  . $egyora['datum'] . " - " . $egyora['ar'] . " Forint";?>
                                     <tr>
-                                        <td style="font-size: 15px"><?php echo($sor); ?>
+                                        <td style="font-size: 15px; height: 20px"><?php echo($sor); ?>
+                                            <form action="profile.php" method="post">
+                                                <input type="hidden" name="oraID" value="<?=$egyora['oraID']?>">
+                                                <input type="submit" name="torles" value="Lemondás" class="btn btn-outline-primary" style="font-size: 10px">
+                                            </form>
                                         </td>
 
                                     </tr>

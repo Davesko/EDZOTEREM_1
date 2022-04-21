@@ -116,7 +116,7 @@ if(isset($_POST['hozza'])){
 
                     </div>
 
-                    <div class="form-items" style="margin: 30px">
+                    <div class="form-items" >
                         <h3>Órák hozzáadása adatbázishoz:</h3>
                         <br>
 
@@ -128,15 +128,16 @@ if(isset($_POST['hozza'])){
                                     <?php endforeach;?>
                                 </select>
                             </div>
+                            <br>
 
                             <div class="col-md-12">
                                 <input class="form-control" type="datetime-local" name="datum" id="datum">
-
                             </div>
 
                             <div class="col-md-12">
                                 <input class="form-control" type="text" name="tipus" id="tipus" placeholder="Írd be a típust! " >
                             </div>
+                            <br>
 
                             <div class="col-md-12">
                                 <input class="form-control" type="number" id="ar" name="ar" min="1" placeholder="Írd be az árat!" >
