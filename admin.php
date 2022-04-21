@@ -116,7 +116,7 @@ if(isset($_POST['hozza'])){
 
                     </div>
 
-                    <div class="form-items" >
+                    <div class="form-items" style="margin: 30px">
                         <h3>Órák hozzáadása adatbázishoz:</h3>
                         <br>
 

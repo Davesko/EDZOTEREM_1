@@ -815,7 +815,7 @@ Our Classes
   border-bottom: none;
 }
 #tabs ul .ui-tabs-active a {
-  color: lightslategrey;
+  color: red;
 }
 #tabs ul .ui-tabs-active span {
   color: #1e1e1e;
