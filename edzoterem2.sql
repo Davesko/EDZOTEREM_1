@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2022 at 12:15 AM
+-- Generation Time: Apr 22, 2022 at 09:23 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -63,8 +63,7 @@ CREATE TABLE `felhasznalo` (
 
 INSERT INTO `felhasznalo` (`id`, `nev`, `jelszo`, `email`, `nem`, `web_admin`) VALUES
 (4, 'david', '172522ec1028ab781d9dfd17eaca4427', 'nagyhazu.david@gmail.com', 2, 1),
-(5, 'davesko', 'e9417a059bddd1487bd81814230579fe', 'davesko@gmail.com', 1, 0),
-(6, 'geri', 'd41d8cd98f00b204e9800998ecf8427e', 'gerivagyok@gmail.com', 0, 0);
+(7, 'János', 'd5d51a2d88cda585e37315067891381f', 'nagy.janos@gmail.com', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -85,7 +84,7 @@ CREATE TABLE `kontakt` (
 --
 
 INSERT INTO `kontakt` (`id`, `nev`, `email`, `targy`, `tartalom`) VALUES
-(5, 'Nagyházu Dávid', 'nagyhazu.david@gmail.com', 'anya', 'apa');
+(5, 'Nagyházu Dávid', 'nagyhazu.david@gmail.com', 'Nem működik', '...');
 
 -- --------------------------------------------------------
 
@@ -107,10 +106,9 @@ CREATE TABLE `orak` (
 --
 
 INSERT INTO `orak` (`oraID`, `userID`, `edzoID`, `datum`, `tipus`, `ar`) VALUES
-(8, 4, 4, '2022-04-15 23:39:36', 'MAX TRAINING', 3500),
-(9, 5, 2, '2022-04-15 23:40:01', 'FUNKCIONÁLIS EDZÉS', 1500),
-(11, 4, 3, '2022-04-15 23:40:34', 'SZEMÉLYI EDZÉS', 3000),
-(22, 4, 3, '2022-09-21 20:00:00', 'FUNKCIONÁLIS', 2000);
+(27, NULL, 2, '2000-02-02 02:00:00', 'FUNKCIONÁLIS EDZÉS', 2000),
+(30, NULL, 4, '2022-02-02 02:02:00', 'MAX', 23000),
+(32, NULL, 6, '2022-04-25 12:30:00', 'SZEMÉYLI EDZÉS', 4000);
 
 --
 -- Indexes for dumped tables
@@ -156,7 +154,7 @@ ALTER TABLE `edzok`
 -- AUTO_INCREMENT for table `felhasznalo`
 --
 ALTER TABLE `felhasznalo`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `kontakt`
@@ -168,7 +166,7 @@ ALTER TABLE `kontakt`
 -- AUTO_INCREMENT for table `orak`
 --
 ALTER TABLE `orak`
-  MODIFY `oraID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `oraID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Constraints for dumped tables
