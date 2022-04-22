@@ -310,9 +310,19 @@
                         <div class="down-content">
                             <span>Személyi edző</span>
                             <h4>Éliás-Szalay Dávid</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                            <p>A sport szeretetét már gyerekkorom óta fontosnak érzem. Fiatalkorom a labdarúgás köré épült fel, közel 12 éven keresztül amatőr szinten, igazolt
+                                </br></br>
+                                játékosként, versenyszerűen űztem a labdarúgást. A ranglétra összes fokát végigjárva, a serdülőtől a felnőtt csapatig mindenhol igyekeztem a lehető
+                                </br></br>
+                                legjobbat kihozni magamból, erősítve a csapatot. Kitartásom és elhivatottságom töretlen volt. Ezen időszak alatt, számos dolgot tanultam. A heti három
+                                </br></br>
+                                edzés megtanított a megfelelő hozzáálláshoz,
+                                a küzdeni akaráshoz, a felelősségérzethez. Ez a sport segített hozzá
+                                </br></br>
+                                a csapatban való együttműködéshez, kapcsolatok kialakításához.</p>
                             <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#">+36 30 4562341<i></i></a></li>
+                                <li><a href="#">szalaydavid@gmail.com<i class="pho"></i></a></li>
 
                             </ul>
                         </div>

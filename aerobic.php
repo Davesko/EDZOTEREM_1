@@ -43,7 +43,7 @@ require_once "kisheader.php";
 
 
 
-<?php include "footer.php" ?>
+<?php include "kisfooter.php" ?>
 
 
 
