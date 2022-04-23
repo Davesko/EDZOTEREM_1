@@ -25,7 +25,7 @@
                 <?php endif;?>
 
                 <h2>Fitness <em>Vital</em></h2>
-                <?php if(!isset($_SESSION["userID"])): ?>
+                <?php if(!isset($_SESSION["id"])): ?>
                     <div class="main-button scroll-to-section">
                         <a href="register.php" style="font-size: 18px">Légy te is tag</a>
                     </div>
@@ -120,10 +120,10 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
                         <h2>NE GONDOLKOZZ, <em>CSELEKEDJ</em> MÉG<em> MA</em>!</h2>
-                        <p>Gyere be houzzánk egy edzésre, nem fogsz csalódni!</p>
+                        <p>Gyere be hozzánk egy edzésre, nem fogsz csalódni!</p>
                         <?php if(!isset($_SESSION["id"])): ?>
                         <div class="main-button scroll-to-section">
-                            <a href="#our-classes">Legyél te is tag</a>
+                            <a href="register.php">Legyél te is tag</a>
                         </div>
                         <?php endif;?>
                     </div>
@@ -203,7 +203,7 @@
                     <div class="section-heading dark-bg">
                         <h2>Menet<em>rendünk</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Tekintsd meg hogy milyen órákra tusz bejelentkezni nálunk</p>
+                        <p>Tekintsd meg hogy milyen órákra tusz bejelentkezni nálunk <br> Az órákra jelentkezéshez jelentkezz be, vagy regisztrálj!</p>
                     </div>
                 </div>
             </div>
@@ -249,14 +249,14 @@
                                     <td class="monday ts-item " data-tsmeta="monday">13:20 - 14:50</td>
                                     <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
 
-                                    <td>Hector T. Daigle</td>
+                                    <td>Nagy Zsuzsa</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Advanced Training</td>
+                                    <td class="day-time">Funkcionális edzés</td>
                                     <td class="friday ts-item" data-tsmeta="friday">10:00 - 11:00</td>
                                     <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
 
-                                    <td>Bret D. Bowers</td>
+                                    <td>Szalay Dávid</td>
                                 </tr>
                             </tbody>
                         </table>
