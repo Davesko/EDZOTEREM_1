@@ -5,7 +5,7 @@ $stmt_edzok = $db->query("SELECT * FROM edzok");
 $stmt_edzok->execute();
 if (isset($_POST['submit'])){
     if(!isset($_POST['oraID']) || $_POST['oraID'] == ""){
-        die("HIBA!!!444!");
+        die("HIBA!");
     }
     $stmt = $db->prepare("DELETE FROM orak WHERE oraID = :ora");
     $stmt->bindValue(":ora", $_POST['oraID']);

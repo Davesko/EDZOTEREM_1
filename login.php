@@ -33,7 +33,7 @@ if(isset($_POST["login"])){
     }
     else{
 
-        die("A jelszó nem helyes!");
+        header("location: /login.php");
     }
 
 

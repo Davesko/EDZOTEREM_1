@@ -80,7 +80,7 @@ $orak = $stmt->fetchAll();
                             </tbody>
                         </table>
 
-                        <button class="btn btn-outline-primary"> <a href="profileEdit.php">Profilod szereksztése</a></button>
+                        <button class="btn btn-outline-primary"> <a href="profileEdit.php">Profilod szerkesztése</a></button>
 <!--                        <input  class="btn btn-outline-primary" type="submit" name="submit" value=" Profilod szereksztése">-->
 
 
