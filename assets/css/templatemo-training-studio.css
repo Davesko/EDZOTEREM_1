@@ -1288,6 +1288,15 @@ responsive
   color: rgba(250,250,250,0.99) !important;
 }
 
+div.scroll {
+  padding: 10px;
+  width: 1000px;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+}
+
 
 
 

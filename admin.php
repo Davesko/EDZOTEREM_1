@@ -13,6 +13,9 @@ if (isset($_POST['submit'])){
 
 }
 
+$stmt_felh = $db->query("SELECT * FROM felhasznalo");
+$stmt_felh->execute();
+
 if(isset($_POST['hozza'])){
     $error = [];
     if($_POST['edzo'] == null || $_POST['edzo'] == ""){
@@ -39,6 +42,13 @@ if(isset($_POST['hozza'])){
         $stmt_add->bindValue(":ar", $_POST['ar']);
         $stmt_add->execute();
     }
+}
+
+if(isset($_POST['frissites'])){
+    $stmt_frisites = $db->prepare("UPDATE felhasznalo SET web_admin = :web_admin WHERE id = :userid");
+    $stmt_frisites->bindValue(":userid", $_POST['felh']);
+    $stmt_frisites->bindValue(":web_admin", $_POST['szint']);
+    $stmt_frisites->execute();
 }
 
 ?>
@@ -92,6 +102,7 @@ if(isset($_POST['hozza'])){
                 <div class="form-content" style="padding-top: 100px">
 
                     <div class="form-items" >
+
                         <h3>Órák törlése:</h3>
                         <br>
 
@@ -111,8 +122,6 @@ if(isset($_POST['hozza'])){
                                         <input style="horiz-align: left" class="btn btn-outline-primary" type="submit" name="submit" value="Törlés">
                                     </form>
                                 <?php endforeach;?>
-
-
 
                     </div>
 
@@ -146,6 +155,36 @@ if(isset($_POST['hozza'])){
                             <div class="form-button mt-3">
                                 <input id="hozza" name="hozza" type="submit" class="btn btn-primary" value="Óra hozzáadása">
                             </div>
+                        </form>
+
+                    </div>
+
+                    <div class="form-items" style="margin: 30px">
+                        <h3>Adminisztrátori szintek:</h3>
+                        <br>
+
+                        <form method="post" action="admin.php">
+
+                            <div class="col-md-12">
+                                <select name="felh" id="felh">
+                                    <?php foreach ($stmt_felh as $felh): ?>
+                                        <option value="<?=$felh['id']?>"><?=$felh['nev']?></option>
+                                    <?php endforeach;?>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select name="szint" id="szint">
+                                    <option value="0">Felhasználó</option>
+                                    <option value="1">Admin</option>
+                                </select>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <input id="frissites" name="frissites" type="submit" class="btn btn-primary" value="Szint frissítése">
+                            </div>
+
+
                         </form>
 
                     </div>

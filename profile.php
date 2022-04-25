@@ -23,8 +23,10 @@ $stmt->execute();
 $orak = $stmt->fetchAll();
 ?>
 <html style="background-color: white;">
-<body >
+<body>
+
 <div class="video-overlay" >
+
     <div class="form-body">
         <div class="row justify-content-center">
 
@@ -35,6 +37,7 @@ $orak = $stmt->fetchAll();
                 <div class="form-content">
 
                     <div class="form-items">
+                        <div class="scroll">
 
                         <h1 style="align-content: center">Profilod Adatai:</h1>
 
@@ -105,6 +108,7 @@ $orak = $stmt->fetchAll();
                                 <input class="btn btn-outline-primary" type="submit" name="submit" value="Foglalás">
                          </form>
 
+
                         <table class="table justify-content-center" style="color: white; width: 1000px>
 
                             <thead class="align-middle">
@@ -158,12 +162,15 @@ $orak = $stmt->fetchAll();
 
                             </tbody>
                         </table
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        </div>
+
 
     </div>
 
