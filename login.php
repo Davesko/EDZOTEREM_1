@@ -62,7 +62,7 @@ if(isset($_POST["login"])){
 
     <!--    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">-->
 
-    <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 
     <link rel="stylesheet" href="assets/css/formStyle.css">
 

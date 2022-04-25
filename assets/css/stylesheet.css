@@ -1,48 +1,6 @@
-/*
 
-TemplateMo 548 Training Studio
-
-https://templatemo.com/tm-548-training-studio
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
-/*
----------------------------------------------
-font & reset css
----------------------------------------------
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-/*
----------------------------------------------
-reset
----------------------------------------------
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
-s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-figure, header, nav, section, article, aside, footer, figcaption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-}
+
 
 .clearfix:after {
   content: ".";
@@ -109,9 +67,7 @@ p {
 }
 
 /*
----------------------------------------------
 global styles
----------------------------------------------
 */
 html,
 body {
@@ -199,9 +155,7 @@ body {
 
 
 /*
----------------------------------------------
 header
----------------------------------------------
 */
 
 .background-header {
@@ -591,9 +545,7 @@ header
 
 
 /*
----------------------------------------------
 banner
----------------------------------------------
 */
 
 .main-banner {
@@ -658,9 +610,7 @@ banner
 
 
 /*
----------------------------------------------
 features
----------------------------------------------
 */
 
 #features {
@@ -701,9 +651,7 @@ features
 }
 
 /*
----------------------------------------------
 subscribe
----------------------------------------------
 */
 
 #call-to-action {
@@ -727,10 +675,6 @@ subscribe
 
 }
 
-
-
-
-
 .cta-content h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -753,9 +697,7 @@ subscribe
 
 
 /*
---------------------------------------------
-Our Classes
---------------------------------------------
+Classes
 */
 
 #our-classes {
@@ -847,9 +789,7 @@ Our Classes
 
 
 /*
----------------------------------------------
 schedule
----------------------------------------------
 */
 
 #schedule {
@@ -951,9 +891,7 @@ schedule
 
 
 /*
----------------------------------------------
 trainers
----------------------------------------------
 */
 
 #trainers .trainer-item {
@@ -1009,9 +947,7 @@ trainers
 
 
 /*
----------------------------------------------
 contact
----------------------------------------------
 */
 
 #contact-us {
@@ -1058,13 +994,6 @@ contact
   resize: none;
 }
 
-.contact-form ::-webkit-input-placeholder { /* Edge */
-  color: #7a7a7a;
-}
-
-.contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #7a7a7a;
-}
 
 .contact-form ::placeholder {
   color: #7a7a7a;
@@ -1093,9 +1022,7 @@ contact
 
 
 /*
----------------------------------------------
 footer
----------------------------------------------
 */
 footer {
   text-align: center;
@@ -1119,9 +1046,7 @@ footer p a:hover {
 
 
 /*
----------------------------------------------
 preloader
----------------------------------------------
 */
 
 .js-preloader {
@@ -1220,9 +1145,7 @@ preloader
 
 
 /*
----------------------------------------------
 responsive
----------------------------------------------
 */
 
 
