@@ -10,7 +10,7 @@
 
 <body>
 
-    <!-- *****  BANNER KEZDETE  ***** -->
+
     <div class="main-banner" id="top">
         <video autoplay muted loop id="bg-video">
             <source src="assets/images/boxos.mp4" type="video/mp4" />
@@ -34,12 +34,7 @@
             </div>
         </div>
     </div>
-    <!-- ***** BANNER ***** -->
 
-
-
-
-    <!-- ***** ÁRAK ***** -->
 
 
 
@@ -111,9 +106,7 @@
         <br>
 
 
-    <!-- ***** ÁRAK VÉGE ***** -->
 
-    <!-- ***** Call to Action Start ***** -->
     <section class="section" id="call-to-action">
         <div class="container">
             <div class="row">
@@ -131,9 +124,9 @@
             </div>
         </div>
     </section>
-    <!-- ***** Call to Action End ***** -->
 
-    <!-- ***** Our Classes Start ***** -->
+
+
     <section class="section" id="our-classes">
         <div class="container">
             <div class="row">
@@ -194,7 +187,7 @@
             </div>
         </div>
     </section>
-    <!-- ***** Our Classes End ***** -->
+
     
     <section class="section" id="schedule">
         <div class="container">
@@ -266,7 +259,7 @@
         </div>
     </section>
 
-    <!-- ***** Testimonials Starts ***** -->
+
     <section class="section" id="trainers">
         <div class="container">
             <div class="row">
@@ -362,7 +355,7 @@
 
 
 
-    <!-- ***** Contact ***** -->
+
     <section class="section" id="contact-us">
         <div class="container-fluid">
             <div class="row">
@@ -422,7 +415,7 @@
             </div>
         </div>
     </section>
-    <!-- ***** Contact Us Area Ends ***** -->
+
     
 <?php include "footer.php"?>
 

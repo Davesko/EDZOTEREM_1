@@ -24,10 +24,9 @@
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
+
                     <a href="index.php" class="logo"><em>FITNESS</em> VITAL</a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
+
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="index.php" class="active">KEZDŐLAP</a></li>
 
@@ -54,7 +53,7 @@
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
+
                 </nav>
             </div>
         </div>

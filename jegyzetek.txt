@@ -1,5 +1,0 @@
-<div class="right-content">
-    <h4>Max Training <br>(Muscle Activity Excellence)</h4>
-    <p>A MAX Training egy szuper intenzív atletikus egész testes edzés amelynek fókuszában az izom és alakformálás áll.</p>
-    <a href="#" class="text-button">Mutass Többet</a>
-</div>

@@ -3,15 +3,15 @@ require_once "config.php";
 
 
 
-if (isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 
-    $stmt = $db->prepare("UPDATE felhasznalo SET nev =:nev, email =:email ,jelszo =:jelszo  WHERE felhasznalo.id = :id ");
+    $stmt = $db->prepare("UPDATE felhasznalo SET nev =:nev, email =:email ,jelszo =:jelszo  WHERE felhasznalo.id = :id");
     $stmt->bindValue(":nev", $_POST["username"]);
     $pw = md5($_POST["password"]);
     $stmt->bindValue(":email", $_POST["email"]);
-
     $stmt->bindValue(":jelszo", $pw);
-    $stmt->bindValue(":id", $_SESSION['userID']);
+    $stmt->bindValue(":id", $_SESSION["id"]);
+
 
     if($stmt->execute())
     {
@@ -27,6 +27,7 @@ if (isset($_POST['submit'])){
     $_SESSION['email'] = $_POST['email'];
 
     header("Location: /profile.php");
+    
 }
 
 
@@ -73,7 +74,7 @@ require_once "kisheader.php";
                             </div>
 
                             <div class="form-button mt-3">
-                                <button id="submit" name="submit" type="submit" class="btn btn-primary">Adatok Frissítése</button>
+                                <input id="submit" name="submit" type="submit" class="btn btn-primary">Adatok Frissítése</input>
                             </div>
                         </form>
                     </div>
