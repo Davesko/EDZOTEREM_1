@@ -19,7 +19,7 @@
         <div class="video-overlay header-text" >
             <div class="caption">
                 <?php if(isset($_SESSION["nev"])): ?>
-                    <h6 ">Nézz be hozzánk egy edzésre <br><div style="font-size: 40px ;padding-top: 20px"><?=$_SESSION['nev']?></div></h6>
+                    <h6 ">Nézz be hozzánk egy edzésre <br> <div style="font-size: 40px ;padding-top: 20px"><?=$_SESSION['nev']?></div></h6>
                 <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>
@@ -65,34 +65,40 @@
     </thead>
     <tbody>
     <tr>
-        <th scope="row">1 alkalom</th>
-        <td>1.200 Forint</td>
-        <td>1.000 Forint</td>
+        <th scope="row">Napi jegy</th>
+        <td>2.100 Forint</td>
+        <td>1.750 Forint</td>
         <td>1 nap</td>
     </tr>
     <tr>
-        <th scope="row">10 alkalom</th>
-        <td>11.000 Forint</td>
-        <td>9.000 Forint</td>
-        <td>30 nap</td>
+        <th scope="row">10 + 1 alkalom</th>
+        <td>15.900 Forint</td>
+        <td>13.800 Forint</td>
+        <td>10 + 1</td>
     </tr>
     <tr>
         <th scope="row">20 alkalom</th>
-        <td>20.000 Forint</td>
-        <td>16.000 Forint</td>
+        <td>27.900 Forint</td>
+        <td>25.200 Forint</td>
         <td>60 nap</td>
     </tr>
     <tr>
         <th scope="row">1 havi</th>
-        <td>11.000 Forint</td>
-        <td>8.000 Forint</td>
+        <td>12.000 Forint</td>
+        <td>-</td>
         <td>30 nap</td>
     </tr>
     <tr>
-        <th scope="row">1 év</th>
-        <td>190.000 Forint</td>
-        <td>150.000 Forint</td>
-        <td>1 év</td>
+        <th scope="row">3 havi</th>
+        <td>14.500 Forint</td>
+        <td>12.500 Forint</td>
+        <td>3 hónap</td>
+    </tr>
+    <tr>
+        <th scope="row">6 havi</th>
+        <td>75.900 Forint</td>
+        <td>63.500 Forint</td>
+        <td>6 hónap</td>
     </tr>
 
     </tbody>
@@ -200,6 +206,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="filters">
@@ -214,26 +221,30 @@
                 </div>
                 <div class="col-lg-10 offset-lg-1">
                     <div class="schedule-table filtering">
-                        <table>
+                        <table class="table-container">
                             <tbody>
                                 <tr>
                                     <td class="day-time">MAX</td>
                                     <td class="monday ts-item show" data-tsmeta="monday">19:00 - 20:00</td>
                                     <td class="wednesday ts-item" data-tsmeta="wednesday">19:00 - 20:00</td>
+                                    <td class="wednesday friday ts-item" data-tsmeta="friday">19:00 - 20:00</td>
 
                                     <td>Dobóczy Maja</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Zsírégető kondi</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday"  >8:15 - 9:45</td>
-                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">8:15 - 9:45</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday" >8:15 - 9:45</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday" >8:15 - 9:45</td>
+                                    <td class="friday ts-item" data-tsmeta="friday" >8:15 - 9:45</td>
+
 
                                     <td>Pálfy Kriszti</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Alakformálás</td>
                                     <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:30</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:30</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday" >10:00 - 11:30</td>
+                                    <td class="friday ts-item" data-tsmeta="friday" >10:00 - 11:30</td>
 
 
                                     <td>Pálfy Kriszti</td>
@@ -242,13 +253,15 @@
                                     <td class="day-time">Fanatic Jump</td>
                                     <td class="monday ts-item show" data-tsmeta="monday">18:00 - 19:00</td>
                                     <td></td>
+                                    <td></td>
 
                                     <td>Dobóczy Maja</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Funkcionális edzés</td>
                                     <td class="monday ts-item show" data-tsmeta="monday">16:30 - 18:00</td>
-                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td></td>
+                                    <td></td>
 
                                     <td>Pálfy Kriszti</td>
                                 </tr>
@@ -256,23 +269,41 @@
                                     <td class="day-time">Aerial jóga</td>
                                     <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
                                     <td class=" thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td></td>
 
 
                                     <td>Lilla</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Box</td>
-                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
-                                    <td class="thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td class="wednesday  ts-item " data-tsmeta="wednesday" >18:00 - 19:15</td>
+                                    <td></td>
+                                    <td></td>
 
 
                                     <td>Lilla</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">FitFight</td>
-                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
-                                    <td class=" thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td class="wednesday  ts-item " data-tsmeta="wednesday" >15:00 - 18:00</td>
+                                    <td class="friday  ts-item " data-tsmeta="friday" >18:00 - 19:00</td>
+                                    <td></td>
 
+                                    <td>Lilla</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Core izom edzés</td>
+                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >8:15 - 9:15</td>
+                                    <td class="thursday  ts-item " data-tsmeta="thursday" >8:15 - 9:15</td>
+                                    <td></td>
+
+                                    <td>Lilla</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Body Mix</td>
+                                    <td class="friday  ts-item " data-tsmeta="friday" >19:00 - 20:00</td>
+                                    <td></td>
+                                    <td></td>
 
                                     <td>Lilla</td>
                                 </tr>

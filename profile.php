@@ -63,7 +63,6 @@ $orak = $stmt->fetchAll();
                             <tr>
                                 <th scope="row">E-mail címed: </th>
                                 <td><?php echo strtoupper($_SESSION['email'])?></td>
-
                             </tr>
                             <tr>
                                 <th scope="row">Nemed: </th>
