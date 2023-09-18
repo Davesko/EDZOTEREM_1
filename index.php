@@ -218,38 +218,63 @@
                             <tbody>
                                 <tr>
                                     <td class="day-time">MAX</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:00</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00 - 11:00</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">19:00 - 20:00</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">19:00 - 20:00</td>
 
                                     <td>Dobóczy Maja</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Zsírégető kondi</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday"  >8:15 - 9:45</td>
+                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">8:15 - 9:45</td>
+
+                                    <td>Pálfy Kriszti</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Alakformálás</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:30</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:30</td>
+
+
+                                    <td>Pálfy Kriszti</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Fanatic Jump</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">18:00 - 19:00</td>
+                                    <td></td>
+
+                                    <td>Dobóczy Maja</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Funkcionális edzés</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">16:30 - 18:00</td>
                                     <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
 
                                     <td>Pálfy Kriszti</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Pilates</td>
-                                    <td class="monday ts-item show " data-tsmeta="monday">10:00 - 11:00</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00 - 11:00</td>
+                                    <td class="day-time">Aerial jóga</td>
+                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td class=" thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
 
-                                    <td>Kiss Réka</td>
+
+                                    <td>Lilla</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Yoga Training Class</td>
-                                    <td class="monday ts-item " data-tsmeta="monday">13:20 - 14:50</td>
-                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td class="day-time">Box</td>
+                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td class="thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
 
-                                    <td>Nagy Zsuzsa</td>
+
+                                    <td>Lilla</td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">Funkcionális edzés</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00 - 11:00</td>
-                                    <td class="wednesday friday ts-item " data-tsmeta="wednesday" data-tsmeta="friday">10:00 - 11:00</td>
+                                    <td class="day-time">FitFight</td>
+                                    <td class="tuesday  ts-item " data-tsmeta="tuesday" >18:00 - 19:15 <br> 19:15 - 20:30</td>
+                                    <td class=" thursday ts-item "  data-tsmeta="thursday">18:00 - 19:15 <br> 19:15 - 20:30</td>
 
-                                    <td>Szalay Dávid</td>
+
+                                    <td>Lilla</td>
                                 </tr>
                             </tbody>
                         </table>
