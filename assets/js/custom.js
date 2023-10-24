@@ -142,6 +142,38 @@
 })()
 
 
+// Várjuk meg, amíg az oldal betöltődik
+document.addEventListener("DOMContentLoaded", function() {
+	// Előző és következő gombra kattintás eseménykezelő
+	document.querySelector('.carousel-control-prev').addEventListener('click', function() {
+		// Az aktív carousel-item meghatározása
+		const activeItem = document.querySelector('.carousel-item.active');
+		// Az aktív carousel-item indexének meghatározása
+		const activeIndex = Array.from(activeItem.parentElement.children).indexOf(activeItem);
+		// Ha az aktív item nem az első, akkor az egyel korábbi elem legyen aktív
+		if (activeIndex > 0) {
+			activeItem.classList.remove('active');
+			activeItem.previousElementSibling.classList.add('active');
+		}
+	});
+
+	document.querySelector('.carousel-control-next').addEventListener('click', function() {
+		// Az aktív carousel-item meghatározása
+		const activeItem = document.querySelector('.carousel-item.active');
+		// Az aktív carousel-item indexének meghatározása
+		const activeIndex = Array.from(activeItem.parentElement.children).indexOf(activeItem);
+		// Ha az aktív item nem az utolsó, akkor az egyel későbbi elem legyen aktív
+		if (activeIndex < activeItem.parentElement.children.length - 1) {
+			activeItem.classList.remove('active');
+			activeItem.nextElementSibling.classList.add('active');
+		}
+	});
+});
+
+
+
+
+
 
 
 

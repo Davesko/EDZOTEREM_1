@@ -13,13 +13,13 @@
 
     <div class="main-banner" id="top">
         <video autoplay muted loop id="bg-video">
-            <source src="assets/images/boxos.mp4" type="video/mp4" />
+            <source src="assets/images/v1_kondi.mp4" type="video/mp4" />
         </video>
 
         <div class="video-overlay header-text" >
             <div class="caption">
                 <?php if(isset($_SESSION["nev"])): ?>
-                    <h6 ">Nézz be hozzánk egy edzésre <br> <div style="font-size: 40px ;padding-top: 20px"><?=$_SESSION['nev']?></div></h6>
+                    <h6> Nézz be hozzánk egy edzésre <br> <div style="font-size: 40px ;padding-top: 20px"><?=$_SESSION['nev']?></div></h6>
                 <?php else:  ?>
                 <h6>Nézz be hozzánk egy edzésre</h6>
                 <?php endif;?>
@@ -27,7 +27,7 @@
                 <h2>Fitness <em>Vital</em></h2>
                 <?php if(!isset($_SESSION["id"])): ?>
                     <div class="main-button scroll-to-section">
-                        <a href="register.php" style="font-size: 18px">Légy te is tag</a>
+                        <a style="font-size: 18px">Légy te is tag</a>
                     </div>
                 <?php endif; ?>
 
@@ -84,14 +84,14 @@
     </tr>
     <tr>
         <th scope="row">1 havi</th>
+        <td>14.500 Forint</td>
         <td>12.000 Forint</td>
-        <td>-</td>
         <td>30 nap</td>
     </tr>
     <tr>
         <th scope="row">3 havi</th>
-        <td>14.500 Forint</td>
-        <td>12.500 Forint</td>
+        <td>39.900 Forint</td>
+        <td>33.900 Forint</td>
         <td>3 hónap</td>
     </tr>
     <tr>
@@ -122,7 +122,7 @@
                         <p>Gyere be hozzánk egy edzésre, nem fogsz csalódni!</p>
                         <?php if(!isset($_SESSION["id"])): ?>
                         <div class="main-button scroll-to-section">
-                            <a href="register.php">Legyél te is tag</a>
+                            <a>Legyél te is tag</a>
                         </div>
                         <?php endif;?>
                     </div>
@@ -202,7 +202,7 @@
                     <div class="section-heading dark-bg">
                         <h2>Menet<em>rendünk</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Tekintsd meg hogy milyen órákra tusz bejelentkezni nálunk <br> Az órákra jelentkezéshez jelentkezz be, vagy regisztrálj!</p>
+                        <p>Tekintsd meg hogy milyen órákra tusz bejelentkezni nálunk <br> Az órákra jelentkezni a pultnál tudsz, várunk mindekit sok szeretettel!</p>
                     </div>
                 </div>
             </div>
@@ -316,6 +316,7 @@
     </section>
 
 
+
     <section class="section" id="trainers">
         <div class="container">
             <div class="row">
@@ -327,85 +328,58 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/palzsuzsa.jpg"   alt="">
-                        </div>
-                        <div class="down-content">
-                            <span>Személyi edző</span>
-                            <h4>Pál Zsuzsanna</h4>
-                            <p>A nevem Pál Zsuzsanna, számomra mindig is fontos volt az egészséges életmód, a mozgás és a sport.
-                                Ezért döntöttem úgy, hogy személyi edzésesel és aerobik oktatássl szeretnék foglalkozni. Több évig versenyeztem
-                                fitness modell kategóriában. Tanulmányaimat a TF-en, valamint az IFBB szakedző iskolájában végeztem testépítés-fitness szakirányban.
-                                <br>
-                                <br>
-                                Szívesen segítek céljaid elérésében, legyen az akár alakformálás, testzsír csökkentés, állóképesség fejlesztés, izomzat erősítés vagy általános közérzetjavítás.
-                            </p>
-                            <ul class="social-icons">
-                                <li><a href="#">+36 30 2235990<i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#">palzsuzsa237@gmail.com<i class=""></i></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/david.jpg" alt="">
-                        </div>
-                        <div class="down-content">
-                            <span>Személyi edző</span>
-                            <h4>Éliás-Szalay Dávid</h4>
-                            <p>A sport szeretetét már gyerekkorom óta fontosnak érzem. Fiatalkorom a labdarúgás köré épült fel, közel 12 éven keresztül amatőr szinten, igazolt
-                                </br></br>
-                                játékosként, versenyszerűen űztem a labdarúgást. A ranglétra összes fokát végigjárva, a serdülőtől a felnőtt csapatig mindenhol igyekeztem a lehető
-                                </br></br>
-                                legjobbat kihozni magamból, erősítve a csapatot. Kitartásom és elhivatottságom töretlen volt. Ezen időszak alatt, számos dolgot tanultam. A heti három
-                                </br></br>
-                                edzés megtanított a megfelelő hozzáálláshoz,
-                                a küzdeni akaráshoz, a felelősségérzethez. Ez a sport segített hozzá
-                                </br></br>
-                                a csapatban való együttműködéshez, kapcsolatok kialakításához.</p>
-                            <ul class="social-icons">
-                                <li><a href="#">+36 30 4562341<i></i></a></li>
-                                <li><a href="#">szalaydavid@gmail.com<i class="pho"></i></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/orsai.jpg" alt="">
-                        </div>
-                        <div class="down-content">
-                            <span>Személyi edző</span>
-                            <h4>Orsai Gergely</h4>
-                            <p>Fiatalon számos sportág kipróbálása után a kézilabda lett az a sport, amelyet egészen 18 éves koromig eredményesen űztem. Sajnos egy sérülés miatt pályafutásomat egy időre befejeződött.
-                            </br></br>
-                            Pár év elteltével azonban éreztem, hogy hiányzik a mozgás, így jutottam el egy konditerembe.
-                            <br><br>
-                            1992 óta foglalkozom testépítéssel, 2005 től versenyszerűen. Ez idő alatt tapasztaltam, tanultam meg, hogy mi kell ahhoz, hogy megőrizd egészséged és tested elképzelését szerre tudd alakítani.
-                            <br><br>
-                            Közben a Testnevelési Főiskolán Testépítő és fitness- oktató képesítést szereztem.
-                            <br><br>
-                            Ha úgy érzed, hogy nem vagy elégedett magaddal és változtatni szeretnél segítek abban, hogy eligazodj a diéták és edzőgépek világában.
 
 
-                            </p>
-                            <ul class="social-icons">
-                                <li><a href="#">+36 30 9500550<i></i></a></li>
-
-                            </ul>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="trainer-item">
+                                    <div class="image-thumb">
+                                        <img src="assets/images/david.jpg" alt="Éliás-Szalay Dávid">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Tulaj/Üzletvezető</span>
+                                        <h4>Éliás-Szalay Dávid</h4>
+                                        <ul class="social-icons">
+                                            <li><a href="#">+36 30 4562341 <i class=""></i></a></li>
+                                            <li><a href="mailto:szalaydavid@gmail.com">szalaydavid@gmail.com <i class="pho"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="trainer-item">
+                                    <div class="image-thumb">
+                                        <img src="assets/images/palzsuzsa.jpg" alt="Pál Zsuzsanna">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Személyi edző</span>
+                                        <h4>Pál Zsuzsanna</h4>
+                                        <ul class="social-icons">
+                                            <li><a href="#">+36 30 2235990 <i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="mailto:palzsuzsa237@gmail.com">palzsuzsa237@gmail.com <i class=""></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="trainer-item">
+                                    <div class="image-thumb">
+                                        <img src="assets/images/orsai.jpg" alt="Orsai Gergely">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Személyi edző</span>
+                                        <h4>Orsai Gergely</h4>
+                                        <ul class="social-icons">
+                                            <li><a href="#">+36 30 9500550 <i class=""></i></a></li>
+                                            <li><a href="mailto:szalaydavid@gmail.com">szalaydavid@gmail.com <i class="pho"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+
     </section>
 
 

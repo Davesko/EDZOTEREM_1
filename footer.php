@@ -22,12 +22,14 @@
                 <img style="height: 20px" src="assets/images/Fitness.png"> <img style="height: 20px" src="assets/images/Vital.png">
                 <br>
                 <br>
+                <!--
                 <a href="register.php" class="btn " >Regisztráció</a>
                 <a href="login.php" class="btn ">Bejelentkezés</a>
-                <br>
-                <br>
+
+                !-->
+
                 <ul class="social-icons">
-                    <li><a href="#">+36 30 1234561<i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#">+36 30 211 7114<i class="fa fa-facebook"></i></a></li>
                     <li><a href="#">fitnessvitel@gmail.com<i class=""></i></a></li>
                 </ul>
                 <p style="color: black">Copyright &copy; 2022 FITNESS VITAL</p>

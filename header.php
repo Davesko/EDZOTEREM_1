@@ -5,8 +5,6 @@
     <link rel="icon" href="assets/images/logo.png" type="image/icon type">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 
@@ -45,6 +43,8 @@
                         <li class="scroll-to-section"><a href="#schedule">MENETREND</a></li>
                         <li class="scroll-to-section"><a href="#trainers">EDZŐINK</a></li>
                         <li class="scroll-to-section"><a href="#contact-us">KONTAKT</a></li>
+                        <!--
+                        -- BEJELENTKEZÉS GOMB --
                         <?php if(!isset($_SESSION['id'])):?>
                         <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="login.php">BEJELENTKEZÉS</a></li>
                         <?php else:?>
@@ -54,7 +54,7 @@
                         <li style="border: 2px solid #FFF200" class="scroll-to-section"><a href="admin.php">ADMIN</a></li>
                         <?php endif;?>
                         <?php endif;?>
-
+                        !-->
 
                         <?php if(isset($_SESSION['id'])):?>
                         <a href="/profile.php" style="margin-left: 40px" class="scroll-to-section" >
@@ -64,13 +64,6 @@
                         </svg>
                         </a>
                         <?php endif;?>
-
-
-
-
-
-
-
 
 
                     <a class='menu-trigger'>
@@ -85,6 +78,11 @@
 
 </header>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 
 
